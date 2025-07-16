@@ -1,6 +1,6 @@
 {
   "account1": {
-    "account_email": "luxoticasupport@eulerity.com",
+    "account_email": "luxotticasupport@eulerity.com",
     "accounts": [
       {
         "account_id": "3067240",
@@ -1067,11 +1067,760 @@
             "create_time": "2023-04-24T19:58:13.583000+00:00"
           }
         ]
+      },
+      {
+        "account_id": "162344128",
+        "account_name": "eyesonbroad.com",
+        "account_full_name": "accounts/162344128",
+        "properties": [
+          {
+            "property_id": "386296486",
+            "property_name": "eyesonbroad.com - GA4",
+            "property_full_name": "properties/386296486",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-17T02:27:38.681000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "167083577",
+        "account_name": "Eye Center of Houston",
+        "account_full_name": "accounts/167083577",
+        "properties": [
+          {
+            "property_id": "372255048",
+            "property_name": "Eye Center of Houston - GA4",
+            "property_full_name": "properties/372255048",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-04-24T20:53:28.752000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "171574905",
+        "account_name": "Monument Family Eye Care",
+        "account_full_name": "accounts/171574905",
+        "properties": [
+          {
+            "property_id": "386395401",
+            "property_name": "monumentfamilyeyecare.com - GA4",
+            "property_full_name": "properties/386395401",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-06-17T03:47:07.732000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "177355176",
+        "account_name": "Google Ads Account",
+        "account_full_name": "accounts/177355176",
+        "properties": [
+          {
+            "property_id": "393621832",
+            "property_name": "www.publiceyeoptical.com - GA4",
+            "property_full_name": "properties/393621832",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T13:45:49.351000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "177632581",
+        "account_name": "leaguecityeyecare.com",
+        "account_full_name": "accounts/177632581",
+        "properties": [
+          {
+            "property_id": "325624936",
+            "property_name": "leaguecityeyecare.com - GA4",
+            "property_full_name": "properties/325624936",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-08-02T16:28:08.215000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "179247529",
+        "account_name": "claritaseyecare.com",
+        "account_full_name": "accounts/179247529",
+        "properties": [
+          {
+            "property_id": "325204855",
+            "property_name": "claritaseyecare.com - GA4",
+            "property_full_name": "properties/325204855",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-07-29T18:20:06.649000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "185253090",
+        "account_name": "mealafaya.com",
+        "account_full_name": "accounts/185253090",
+        "properties": [
+          {
+            "property_id": "255830347",
+            "property_name": "mealafaya.com",
+            "property_full_name": "properties/255830347",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2020-12-09T23:07:20.370000+00:00"
+          },
+          {
+            "property_id": "372179128",
+            "property_name": "mealafaya.com - GA4",
+            "property_full_name": "properties/372179128",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-04-24T20:20:21.978000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "190288811",
+        "account_name": "Sky High Vision",
+        "account_full_name": "accounts/190288811",
+        "properties": [
+          {
+            "property_id": "262985976",
+            "property_name": "Sky High Vision",
+            "property_full_name": "properties/262985976",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Denver",
+            "currency_code": "USD",
+            "create_time": "2021-02-22T14:47:45.704000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "192064642",
+        "account_name": "Mashpee VC",
+        "account_full_name": "accounts/192064642",
+        "properties": [
+          {
+            "property_id": "265452049",
+            "property_name": "Mashpee Vision Care",
+            "property_full_name": "properties/265452049",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2021-03-12T23:04:59.814000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "192531430",
+        "account_name": "Modern Eye Care Analytics",
+        "account_full_name": "accounts/192531430",
+        "properties": [
+          {
+            "property_id": "266116029",
+            "property_name": "Modern Eye Care",
+            "property_full_name": "properties/266116029",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2021-03-18T14:24:35.511000+00:00"
+          },
+          {
+            "property_id": "382204489",
+            "property_name": "Modern Eye Care - GA4",
+            "property_full_name": "properties/382204489",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-06T18:52:51.346000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "192553846",
+        "account_name": "Modern Eye Care of Salisbury Analytics",
+        "account_full_name": "accounts/192553846",
+        "properties": [
+          {
+            "property_id": "266112394",
+            "property_name": "Modern Eye Care of Salisbury",
+            "property_full_name": "properties/266112394",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2021-03-18T14:27:13.553000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "194671825",
+        "account_name": "matrixvisioncenter.com",
+        "account_full_name": "accounts/194671825",
+        "properties": [
+          {
+            "property_id": "372207788",
+            "property_name": "matrixvisioncenter.com - GA4",
+            "property_full_name": "properties/372207788",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-24T20:37:24.328000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "196844281",
+        "account_name": "eyesetcms.com",
+        "account_full_name": "accounts/196844281",
+        "properties": [
+          {
+            "property_id": "387026510",
+            "property_name": "eyesetcms.com - GA4",
+            "property_full_name": "properties/387026510",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-17T12:16:44.133000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "207096213",
+        "account_name": "Heights Eye Studio",
+        "account_full_name": "accounts/207096213",
+        "properties": [
+          {
+            "property_id": "285729071",
+            "property_name": "Heights Eye Studio",
+            "property_full_name": "properties/285729071",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2021-09-08T22:10:32.625000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "208649817",
+        "account_name": "Google Ads Account",
+        "account_full_name": "accounts/208649817",
+        "properties": [
+          {
+            "property_id": "393287900",
+            "property_name": "www.vantagepointeyes.com - GA4",
+            "property_full_name": "properties/393287900",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T09:23:52.803000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "211814500",
+        "account_name": "Lesly's  Optical",
+        "account_full_name": "accounts/211814500",
+        "properties": [
+          {
+            "property_id": "292061444",
+            "property_name": "Lesly's Optical ",
+            "property_full_name": "properties/292061444",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2021-11-02T16:09:18.130000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "215794590",
+        "account_name": "eyecarebydesignchi.com",
+        "account_full_name": "accounts/215794590",
+        "properties": [
+          {
+            "property_id": "371988522",
+            "property_name": "eyecarebydesignchi.com - GA4",
+            "property_full_name": "properties/371988522",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-24T18:39:28.295000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "215889783",
+        "account_name": "Creekside Admin",
+        "account_full_name": "accounts/215889783",
+        "properties": [
+          {
+            "property_id": "297665503",
+            "property_name": "Creekside Family Eyecare",
+            "property_full_name": "properties/297665503",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2021-12-24T02:52:59.533000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "216915313",
+        "account_name": "landingseyecare.com",
+        "account_full_name": "accounts/216915313",
+        "properties": [
+          {
+            "property_id": "325923453",
+            "property_name": "landingseyecare.com - GA4",
+            "property_full_name": "properties/325923453",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-08-04T00:03:36.998000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "216933896",
+        "account_name": "Midwest Eye Associates",
+        "account_full_name": "accounts/216933896",
+        "properties": [
+          {
+            "property_id": "299151258",
+            "property_name": "Creve Coeur",
+            "property_full_name": "properties/299151258",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-01-11T21:52:48.535000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "218608993",
+        "account_name": "caryeyeassociates.com",
+        "account_full_name": "accounts/218608993",
+        "properties": [
+          {
+            "property_id": "369465273",
+            "property_name": "caryeyeassociates.com - GA4",
+            "property_full_name": "properties/369465273",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-19T17:27:32.765000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "219633903",
+        "account_name": "visionsource-macpark.com",
+        "account_full_name": "accounts/219633903",
+        "properties": [
+          {
+            "property_id": "302666709",
+            "property_name": "www.visionsource-macpark.com",
+            "property_full_name": "properties/302666709",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-02-07T20:20:26.547000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "222106316",
+        "account_name": "Noble Eyes & Vision Center",
+        "account_full_name": "accounts/222106316",
+        "properties": [
+          {
+            "property_id": "305962048",
+            "property_name": "Noble Eyes & Vision Center",
+            "property_full_name": "properties/305962048",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-03-05T19:56:05.898000+00:00"
+          },
+          {
+            "property_id": "390682969",
+            "property_name": "Noble Eyes - GA4",
+            "property_full_name": "properties/390682969",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-27T02:26:18.038000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "225766489",
+        "account_name": "Eyediology Eye Care",
+        "account_full_name": "accounts/225766489",
+        "properties": [
+          {
+            "property_id": "386641193",
+            "property_name": "Eyediology Eye Care - GA4",
+            "property_full_name": "properties/386641193",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-17T07:05:51.931000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "228894206",
+        "account_name": "NJ Vision Air (Corporate all 3 offices)",
+        "account_full_name": "accounts/228894206",
+        "properties": [
+          {
+            "property_id": "315282214",
+            "property_name": "Advanced Eyecare of Edgewater",
+            "property_full_name": "properties/315282214",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-05-17T14:07:30.847000+00:00"
+          },
+          {
+            "property_id": "315302450",
+            "property_name": "Advanced Eyecare of Hillsborough",
+            "property_full_name": "properties/315302450",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-05-17T14:04:47.801000+00:00"
+          },
+          {
+            "property_id": "315278438",
+            "property_name": "Advanced Eyecare of Carteret",
+            "property_full_name": "properties/315278438",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-05-17T15:12:27.199000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "229347628",
+        "account_name": "GECC",
+        "account_full_name": "accounts/229347628",
+        "properties": [
+          {
+            "property_id": "315898900",
+            "property_name": "GECC",
+            "property_full_name": "properties/315898900",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-05-19T13:51:55.196000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "229353955",
+        "account_name": "DFEC",
+        "account_full_name": "accounts/229353955",
+        "properties": [
+          {
+            "property_id": "315871344",
+            "property_name": "Www.visionsource-Dexter.com",
+            "property_full_name": "properties/315871344",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-05-19T18:03:33.810000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "229945095",
+        "account_name": "Broadway Eye Clinic",
+        "account_full_name": "accounts/229945095",
+        "properties": [
+          {
+            "property_id": "316691478",
+            "property_name": "Broadway Eye Clinic",
+            "property_full_name": "properties/316691478",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Denver",
+            "currency_code": "USD",
+            "create_time": "2022-05-25T00:12:14.017000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "230369301",
+        "account_name": "Best Eye Vision",
+        "account_full_name": "accounts/230369301",
+        "properties": [
+          {
+            "property_id": "317360568",
+            "property_name": "Best Eye Vision",
+            "property_full_name": "properties/317360568",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-05-31T21:08:34.483000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232365778",
+        "account_name": "Renaissance Eye Care",
+        "account_full_name": "accounts/232365778",
+        "properties": [
+          {
+            "property_id": "320114892",
+            "property_name": "Renaissance Eye Care",
+            "property_full_name": "properties/320114892",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-20T22:15:16.982000+00:00"
+          },
+          {
+            "property_id": "372028452",
+            "property_name": "Renaissance Eye Care - GA4",
+            "property_full_name": "properties/372028452",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-24T19:08:56.079000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232636581",
+        "account_name": "1873548868047920269",
+        "account_full_name": "accounts/232636581",
+        "properties": [
+          {
+            "property_id": "320450104",
+            "property_name": "Allen Eye Associates",
+            "property_full_name": "properties/320450104",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-06-22T18:21:21.285000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232820721",
+        "account_name": "AE Carteret ",
+        "account_full_name": "accounts/232820721",
+        "properties": [
+          {
+            "property_id": "320620022",
+            "property_name": "eyecare-carteret.com",
+            "property_full_name": "properties/320620022",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-23T20:21:37.551000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232821319",
+        "account_name": "AE Edgewater",
+        "account_full_name": "accounts/232821319",
+        "properties": [
+          {
+            "property_id": "320581123",
+            "property_name": "edgewatereyecare.com",
+            "property_full_name": "properties/320581123",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-23T20:19:20.147000+00:00"
+          },
+          {
+            "property_id": "362657114",
+            "property_name": "edgewatereyecare.com - GA4",
+            "property_full_name": "properties/362657114",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-04T06:27:43.895000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "233662398",
+        "account_name": "wellsvisioncenter@gmail.com",
+        "account_full_name": "accounts/233662398",
+        "properties": [
+          {
+            "property_id": "321971164",
+            "property_name": "Wells Vision and Laser Eye Center",
+            "property_full_name": "properties/321971164",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-07-06T01:21:12.569000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "235556166",
+        "account_name": "Hartland Eye Care",
+        "account_full_name": "accounts/235556166",
+        "properties": [
+          {
+            "property_id": "390433489",
+            "property_name": "Hartland Eye Care - GA4",
+            "property_full_name": "properties/390433489",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Detroit",
+            "currency_code": "USD",
+            "create_time": "2023-06-26T22:58:45.399000+00:00"
+          }
+        ]
       }
     ]
   },
   "account2": {
-    "account_email": "luxoticasupport2@eulerity.com",
+    "account_email": "luxotticasupport2@eulerity.com",
     "accounts": [
       {
         "account_id": "10674510",
@@ -1970,11 +2719,1049 @@
             "create_time": "2023-06-17T08:55:03.984000+00:00"
           }
         ]
+      },
+      {
+        "account_id": "172693421",
+        "account_name": "Opto Multimedia 13",
+        "account_full_name": "accounts/172693421",
+        "properties": [
+          {
+            "property_id": "390610149",
+            "property_name": "Kenai Vision Center - GA4",
+            "property_full_name": "properties/390610149",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-06-27T01:25:08.267000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "181067962",
+        "account_name": "summitvisionsource.com",
+        "account_full_name": "accounts/181067962",
+        "properties": [
+          {
+            "property_id": "250148978",
+            "property_name": "cutlereye.com",
+            "property_full_name": "properties/250148978",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Denver",
+            "currency_code": "USD",
+            "create_time": "2020-10-22T20:13:47.272000+00:00"
+          },
+          {
+            "property_id": "327017042",
+            "property_name": "summitvisionsource.com - GA4",
+            "property_full_name": "properties/327017042",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Denver",
+            "currency_code": "USD",
+            "create_time": "2022-08-12T20:10:38.093000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "191729384",
+        "account_name": "Roya.com Customer Group 33",
+        "account_full_name": "accounts/191729384",
+        "properties": [
+          {
+            "property_id": "361560845",
+            "property_name": "eyesonknoxville.com - Karin Moore - sub_J7AS6byKJt8e4S - GA4",
+            "property_full_name": "properties/361560845",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-03-31T01:05:21.114000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "192246920",
+        "account_name": "Lang Eye Care",
+        "account_full_name": "accounts/192246920",
+        "properties": [
+          {
+            "property_id": "265702481",
+            "property_name": "Lang Eye Care - GA4",
+            "property_full_name": "properties/265702481",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Detroit",
+            "currency_code": "USD",
+            "create_time": "2021-03-16T00:21:29.703000+00:00"
+          },
+          {
+            "property_id": "405915146",
+            "property_name": "Lang Eye Care - GA4",
+            "property_full_name": "properties/405915146",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Detroit",
+            "currency_code": "USD",
+            "create_time": "2023-09-06T22:07:00.624000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "197621007",
+        "account_name": "McCulley Optix Gallery",
+        "account_full_name": "accounts/197621007",
+        "properties": [
+          {
+            "property_id": "322230388",
+            "property_name": "McCulley Optix Gallery - GA4",
+            "property_full_name": "properties/322230388",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-07-07T21:15:43+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "210320980",
+        "account_name": "Roya.com Customer Group 34",
+        "account_full_name": "accounts/210320980",
+        "properties": [
+          {
+            "property_id": "380736924",
+            "property_name": "seelavieeyecare.com - Dr. Kayla Volkert - sub_K6Z1wMhSQ7op0M - GA4",
+            "property_full_name": "properties/380736924",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-02T23:24:17.729000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "210894349",
+        "account_name": "Olney EyeCare",
+        "account_full_name": "accounts/210894349",
+        "properties": [
+          {
+            "property_id": "291747314",
+            "property_name": "Olney EyeCare Website - GA4",
+            "property_full_name": "properties/291747314",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2021-10-30T05:16:59.350000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "217791093",
+        "account_name": "A - B",
+        "account_full_name": "accounts/217791093",
+        "properties": [
+          {
+            "property_id": "390316538",
+            "property_name": "Allen Eye Associates - GA4",
+            "property_full_name": "properties/390316538",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-06-26T21:17:16.845000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "221619183",
+        "account_name": "eyesonrufesnow.com",
+        "account_full_name": "accounts/221619183",
+        "properties": [
+          {
+            "property_id": "386661139",
+            "property_name": "eyesonrufesnow.com - GA4",
+            "property_full_name": "properties/386661139",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-17T07:21:37.586000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "226230828",
+        "account_name": "Google Ads Account",
+        "account_full_name": "accounts/226230828",
+        "properties": [
+          {
+            "property_id": "345424193",
+            "property_name": "gainesvillevision.com - GA4",
+            "property_full_name": "properties/345424193",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-12-07T03:43:28.404000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "227559293",
+        "account_name": "Olympus Vision",
+        "account_full_name": "accounts/227559293",
+        "properties": [
+          {
+            "property_id": "313498901",
+            "property_name": "Olympus Vision",
+            "property_full_name": "properties/313498901",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2022-05-01T23:13:39.020000+00:00"
+          },
+          {
+            "property_id": "337944918",
+            "property_name": "olympusvision.com - GA4",
+            "property_full_name": "properties/337944918",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-10-18T17:14:24.479000+00:00"
+          },
+          {
+            "property_id": "396113003",
+            "property_name": "olympusvision.com - GA4",
+            "property_full_name": "properties/396113003",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T07:03:58.720000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "230579653",
+        "account_name": "visionsource-broadway.com",
+        "account_full_name": "accounts/230579653",
+        "properties": [
+          {
+            "property_id": "382158188",
+            "property_name": "visionsource-broadway.com - GA4",
+            "property_full_name": "properties/382158188",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-06T18:19:38.945000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "231868147",
+        "account_name": "vibeoptometry.com",
+        "account_full_name": "accounts/231868147",
+        "properties": [
+          {
+            "property_id": "319246883",
+            "property_name": "vibeoptometry.com - GA4",
+            "property_full_name": "properties/319246883",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-06-13T17:26:19.171000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232379757",
+        "account_name": "premiervisionpartners.com",
+        "account_full_name": "accounts/232379757",
+        "properties": [
+          {
+            "property_id": "319940093",
+            "property_name": "premiervisionpartners.com",
+            "property_full_name": "properties/319940093",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-17T18:00:53.687000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232807284",
+        "account_name": "AE Hillsborough",
+        "account_full_name": "accounts/232807284",
+        "properties": [
+          {
+            "property_id": "334532651",
+            "property_name": "www.eyecare-nj.com - GA4",
+            "property_full_name": "properties/334532651",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-09-27T20:08:13.973000+00:00"
+          },
+          {
+            "property_id": "371300004",
+            "property_name": "www.eyecare-nj.com - GA4",
+            "property_full_name": "properties/371300004",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-21T01:38:37.249000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232820721",
+        "account_name": "AE Carteret ",
+        "account_full_name": "accounts/232820721",
+        "properties": [
+          {
+            "property_id": "320620022",
+            "property_name": "eyecare-carteret.com",
+            "property_full_name": "properties/320620022",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-23T20:21:37.551000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "232821319",
+        "account_name": "AE Edgewater",
+        "account_full_name": "accounts/232821319",
+        "properties": [
+          {
+            "property_id": "320581123",
+            "property_name": "edgewatereyecare.com",
+            "property_full_name": "properties/320581123",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-23T20:19:20.147000+00:00"
+          },
+          {
+            "property_id": "362657114",
+            "property_name": "edgewatereyecare.com - GA4",
+            "property_full_name": "properties/362657114",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-04T06:27:43.895000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "233070657",
+        "account_name": "Yukon Eye",
+        "account_full_name": "accounts/233070657",
+        "properties": [
+          {
+            "property_id": "321064191",
+            "property_name": "Yukon Eyecare",
+            "property_full_name": "properties/321064191",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Anchorage",
+            "currency_code": "USD",
+            "create_time": "2022-06-28T17:34:24.084000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "233108271",
+        "account_name": "UA-111116680-26",
+        "account_full_name": "accounts/233108271",
+        "properties": [
+          {
+            "property_id": "321087884",
+            "property_name": "West Michigan Eyecare",
+            "property_full_name": "properties/321087884",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-06-28T19:14:19.392000+00:00"
+          },
+          {
+            "property_id": "321248356",
+            "property_name": "WMEA office website - GA4",
+            "property_full_name": "properties/321248356",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Detroit",
+            "currency_code": "USD",
+            "create_time": "2022-06-29T17:28:51.234000+00:00"
+          },
+          {
+            "property_id": "405885947",
+            "property_name": "WMEA office website - GA4",
+            "property_full_name": "properties/405885947",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Detroit",
+            "currency_code": "USD",
+            "create_time": "2023-09-06T21:28:56.714000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "233779488",
+        "account_name": "Envision Eyecare",
+        "account_full_name": "accounts/233779488",
+        "properties": [
+          {
+            "property_id": "322103224",
+            "property_name": "Envision Eyecare",
+            "property_full_name": "properties/322103224",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-07-07T14:57:28.990000+00:00"
+          },
+          {
+            "property_id": "371978483",
+            "property_name": "Envision Eyecare - GA4",
+            "property_full_name": "properties/371978483",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-24T18:32:26.188000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "239089075",
+        "account_name": "Fremont Vision Source",
+        "account_full_name": "accounts/239089075",
+        "properties": [
+          {
+            "property_id": "329296842",
+            "property_name": "Fremont Vision Source",
+            "property_full_name": "properties/329296842",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-08-29T17:29:40.066000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "239097967",
+        "account_name": "Eyes on Rufe Snow",
+        "account_full_name": "accounts/239097967",
+        "properties": [
+          {
+            "property_id": "329289454",
+            "property_name": "Eyes on Rufe Snow",
+            "property_full_name": "properties/329289454",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-08-29T18:03:08.688000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "239532677",
+        "account_name": "317eyecare.com",
+        "account_full_name": "accounts/239532677",
+        "properties": [
+          {
+            "property_id": "329792664",
+            "property_name": "317eyecare.com - GA4",
+            "property_full_name": "properties/329792664",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-08-30T22:37:44.482000+00:00"
+          },
+          {
+            "property_id": "396143905",
+            "property_name": "317eyecare.com - GA4",
+            "property_full_name": "properties/396143905",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T07:28:14.270000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "239930816",
+        "account_name": "DMM GA4 10",
+        "account_full_name": "accounts/239930816",
+        "properties": [
+          {
+            "property_id": "331090538",
+            "property_name": "Kenai Vision Center",
+            "property_full_name": "properties/331090538",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-09-08T02:52:00.408000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "242094889",
+        "account_name": "Eye Society",
+        "account_full_name": "accounts/242094889",
+        "properties": [
+          {
+            "property_id": "333102593",
+            "property_name": "Eye Society Website - GA4",
+            "property_full_name": "properties/333102593",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2022-09-21T01:58:44.210000+00:00"
+          },
+          {
+            "property_id": "397910162",
+            "property_name": "Eye Society Website - GA4",
+            "property_full_name": "properties/397910162",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-07-20T01:08:45.955000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "245364044",
+        "account_name": "visionsource-riverstone.com",
+        "account_full_name": "accounts/245364044",
+        "properties": [
+          {
+            "property_id": "337113259",
+            "property_name": "visionsource-riverstone.com",
+            "property_full_name": "properties/337113259",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-10-12T20:26:39.292000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "249679986",
+        "account_name": "sanmarcoseyes.com",
+        "account_full_name": "accounts/249679986",
+        "properties": [
+          {
+            "property_id": "342765380",
+            "property_name": "sanmarcoseyes.com - GA4",
+            "property_full_name": "properties/342765380",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-11-16T17:36:21.806000+00:00"
+          },
+          {
+            "property_id": "395777821",
+            "property_name": "sanmarcoseyes.com - GA4",
+            "property_full_name": "properties/395777821",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T03:22:50.321000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "252267624",
+        "account_name": "Lighthouse Eye Care ",
+        "account_full_name": "accounts/252267624",
+        "properties": [
+          {
+            "property_id": "346752859",
+            "property_name": "Lighthouse Eye Care",
+            "property_full_name": "properties/346752859",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-12-16T18:18:10.984000+00:00"
+          },
+          {
+            "property_id": "383787322",
+            "property_name": "Lighthouse Eye Care - GA4",
+            "property_full_name": "properties/383787322",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-13T06:23:15.749000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "252333443",
+        "account_name": "OmniVision Eye Care",
+        "account_full_name": "accounts/252333443",
+        "properties": [
+          {
+            "property_id": "377202849",
+            "property_name": "OmniVision Eye Care - GA4",
+            "property_full_name": "properties/377202849",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-05-19T21:59:43.228000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "252471982",
+        "account_name": "Zachary Jost",
+        "account_full_name": "accounts/252471982",
+        "properties": [
+          {
+            "property_id": "347084094",
+            "property_name": "Vision Source Park Square",
+            "property_full_name": "properties/347084094",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2022-12-20T16:06:46.408000+00:00"
+          },
+          {
+            "property_id": "386482573",
+            "property_name": "Vision Source of Park Square - GA4",
+            "property_full_name": "properties/386482573",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-17T04:58:01.224000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "254909024",
+        "account_name": "FPECIMM",
+        "account_full_name": "accounts/254909024",
+        "properties": [
+          {
+            "property_id": "350574991",
+            "property_name": "FPECIMM",
+            "property_full_name": "properties/350574991",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-01-23T18:08:20.745000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "256460781",
+        "account_name": "focusoneyecare@gmail.com",
+        "account_full_name": "accounts/256460781",
+        "properties": [
+          {
+            "property_id": "352658308",
+            "property_name": "focusoneyestexas.com",
+            "property_full_name": "properties/352658308",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-02-07T01:36:01.470000+00:00"
+          },
+          {
+            "property_id": "370669899",
+            "property_name": "FocusoneyesUA - GA4",
+            "property_full_name": "properties/370669899",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-20T17:59:40.307000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "256520480",
+        "account_name": "visualcareassociates.com",
+        "account_full_name": "accounts/256520480",
+        "properties": [
+          {
+            "property_id": "352740139",
+            "property_name": "visualcareassociates.com - GA4",
+            "property_full_name": "properties/352740139",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-02-07T18:27:59.107000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "257905199",
+        "account_name": "hazeleyecenter.com",
+        "account_full_name": "accounts/257905199",
+        "properties": [
+          {
+            "property_id": "354730144",
+            "property_name": "hazeleyecenter.com - GA4",
+            "property_full_name": "properties/354730144",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-02-22T00:51:36.552000+00:00"
+          },
+          {
+            "property_id": "395984691",
+            "property_name": "hazeleyecenter.com - GA4",
+            "property_full_name": "properties/395984691",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T05:50:30.173000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "258351305",
+        "account_name": "marcopoloeyecenter.com",
+        "account_full_name": "accounts/258351305",
+        "properties": [
+          {
+            "property_id": "355296134",
+            "property_name": "marcopoloeyecenter.com - GA4",
+            "property_full_name": "properties/355296134",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-02-24T19:43:03.594000+00:00"
+          },
+          {
+            "property_id": "383483372",
+            "property_name": "marcopoloeyecenter.com - GA4",
+            "property_full_name": "properties/383483372",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-12T13:21:33.622000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "259093511",
+        "account_name": "Alex Vision Source",
+        "account_full_name": "accounts/259093511",
+        "properties": [
+          {
+            "property_id": "356320233",
+            "property_name": "Alex Vision Source",
+            "property_full_name": "properties/356320233",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-03-02T22:46:49.179000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "259755154",
+        "account_name": "Eye Society ",
+        "account_full_name": "accounts/259755154",
+        "properties": [
+          {
+            "property_id": "357176301",
+            "property_name": "Eye Society",
+            "property_full_name": "properties/357176301",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-03-08T00:51:15.087000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "263294030",
+        "account_name": "wrayvisionsource.com",
+        "account_full_name": "accounts/263294030",
+        "properties": [
+          {
+            "property_id": "363694819",
+            "property_name": "wrayvisionsource.com",
+            "property_full_name": "properties/363694819",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-06T21:11:26.917000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "263685751",
+        "account_name": "yumavisionsource.com",
+        "account_full_name": "accounts/263685751",
+        "properties": [
+          {
+            "property_id": "365916956",
+            "property_name": "yumavisionsource.com - GA4",
+            "property_full_name": "properties/365916956",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-11T23:22:01.990000+00:00"
+          },
+          {
+            "property_id": "396093177",
+            "property_name": "yumavisionsource.com - GA4",
+            "property_full_name": "properties/396093177",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T06:48:43.470000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "263709750",
+        "account_name": "wrayvisionsource.com",
+        "account_full_name": "accounts/263709750",
+        "properties": [
+          {
+            "property_id": "365970229",
+            "property_name": "wrayvisionsource.com - GA4",
+            "property_full_name": "properties/365970229",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-11T23:24:50.246000+00:00"
+          },
+          {
+            "property_id": "396079460",
+            "property_name": "wrayvisionsource.com - GA4",
+            "property_full_name": "properties/396079460",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T06:38:48.271000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "264079013",
+        "account_name": "Eye Expressions",
+        "account_full_name": "accounts/264079013",
+        "properties": [
+          {
+            "property_id": "368802514",
+            "property_name": "Eye Expressions",
+            "property_full_name": "properties/368802514",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-04-16T01:49:21.935000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "264083610",
+        "account_name": "Optometry Job Offer Site",
+        "account_full_name": "accounts/264083610",
+        "properties": [
+          {
+            "property_id": "368762308",
+            "property_name": "VS Job Offer Site - GA4",
+            "property_full_name": "properties/368762308",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-17T15:42:40.103000+00:00"
+          },
+          {
+            "property_id": "396069393",
+            "property_name": "VS Job Offer Site - GA4",
+            "property_full_name": "properties/396069393",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-12T06:31:11.321000+00:00"
+          }
+        ]
       }
     ]
   },
   "account3": {
-    "account_email": "luxoticasupport3@eulerity.com",
+    "account_email": "luxotticasupport3@eulerity.com",
     "accounts": [
       {
         "account_id": "5589583",
@@ -3057,11 +4844,866 @@
             "create_time": "2023-06-28T16:46:21.260000+00:00"
           }
         ]
+      },
+      {
+        "account_id": "275430827",
+        "account_name": "Vision Source Copperfield",
+        "account_full_name": "accounts/275430827",
+        "properties": [
+          {
+            "property_id": "391356124",
+            "property_name": "Vision Source Copperfield",
+            "property_full_name": "properties/391356124",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-28T16:08:17.928000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275437200",
+        "account_name": "Main Line Vision - GA4",
+        "account_full_name": "accounts/275437200",
+        "properties": [
+          {
+            "property_id": "391409452",
+            "property_name": "Main Line Vision - GA4",
+            "property_full_name": "properties/391409452",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-28T17:19:53.085000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275440018",
+        "account_name": "KellerPremierEyeCare",
+        "account_full_name": "accounts/275440018",
+        "properties": [
+          {
+            "property_id": "391398935",
+            "property_name": "KellerPremierEyeCare",
+            "property_full_name": "properties/391398935",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-28T17:03:45.864000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275455761",
+        "account_name": "Windermere Optique",
+        "account_full_name": "accounts/275455761",
+        "properties": [
+          {
+            "property_id": "391281598",
+            "property_name": "Windermere Optique",
+            "property_full_name": "properties/391281598",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-28T16:56:00.115000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275457068",
+        "account_name": "Vision Source Cypress",
+        "account_full_name": "accounts/275457068",
+        "properties": [
+          {
+            "property_id": "391359934",
+            "property_name": "Vision Source Cypress",
+            "property_full_name": "properties/391359934",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-28T16:37:46.537000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275871489",
+        "account_name": "Gaylord Eye Care Center",
+        "account_full_name": "accounts/275871489",
+        "properties": [
+          {
+            "property_id": "393842718",
+            "property_name": "Gaylord Eye Care Center",
+            "property_full_name": "properties/393842718",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T18:08:59.300000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275872192",
+        "account_name": "Bellaire Eye Center",
+        "account_full_name": "accounts/275872192",
+        "properties": [
+          {
+            "property_id": "393694217",
+            "property_name": "Bellaire Eye Center",
+            "property_full_name": "properties/393694217",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T18:04:46.227000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275896113",
+        "account_name": "Vibe Optometry",
+        "account_full_name": "accounts/275896113",
+        "properties": [
+          {
+            "property_id": "393600059",
+            "property_name": "Vibe Optometry",
+            "property_full_name": "properties/393600059",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:06:06.507000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275900551",
+        "account_name": "Advanced Eyecare Hillsborough",
+        "account_full_name": "accounts/275900551",
+        "properties": [
+          {
+            "property_id": "393778995",
+            "property_name": "Advanced Eyecare Hillsborough",
+            "property_full_name": "properties/393778995",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:27:59.259000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275901751",
+        "account_name": "Vision Source Oviedo",
+        "account_full_name": "accounts/275901751",
+        "properties": [
+          {
+            "property_id": "393690381",
+            "property_name": "Vision Source Oviedo",
+            "property_full_name": "properties/393690381",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:10:14.951000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275901958",
+        "account_name": "Vision Source Pearland",
+        "account_full_name": "accounts/275901958",
+        "properties": [
+          {
+            "property_id": "393568943",
+            "property_name": "Vision Source Pearland",
+            "property_full_name": "properties/393568943",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:35:43.590000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275902075",
+        "account_name": "Montgomery Vision Source",
+        "account_full_name": "accounts/275902075",
+        "properties": [
+          {
+            "property_id": "393719296",
+            "property_name": "Montgomery Vision Source",
+            "property_full_name": "properties/393719296",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:19:23.485000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275910235",
+        "account_name": "Koskinen Eye Clinic",
+        "account_full_name": "accounts/275910235",
+        "properties": [
+          {
+            "property_id": "393616297",
+            "property_name": "Koskinen Eye Clinic",
+            "property_full_name": "properties/393616297",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:16:00.753000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275913784",
+        "account_name": "Dr Gregory L Bittner",
+        "account_full_name": "accounts/275913784",
+        "properties": [
+          {
+            "property_id": "393753802",
+            "property_name": "Dr Gregory L Bittner",
+            "property_full_name": "properties/393753802",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:42:47.250000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275916322",
+        "account_name": "Cheboygan Vision Source",
+        "account_full_name": "accounts/275916322",
+        "properties": [
+          {
+            "property_id": "393717796",
+            "property_name": "Cheboygan Vision Source",
+            "property_full_name": "properties/393717796",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:54:12.177000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275916607",
+        "account_name": "Eyeclectic Vision Source",
+        "account_full_name": "accounts/275916607",
+        "properties": [
+          {
+            "property_id": "393414893",
+            "property_name": "Eyeclectic Vision Source",
+            "property_full_name": "properties/393414893",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T16:00:38.776000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275940006",
+        "account_name": "Eyes on Main",
+        "account_full_name": "accounts/275940006",
+        "properties": [
+          {
+            "property_id": "393745390",
+            "property_name": "Eyes on Main",
+            "property_full_name": "properties/393745390",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T17:49:50.275000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275982250",
+        "account_name": "Eberle Eyecare",
+        "account_full_name": "accounts/275982250",
+        "properties": [
+          {
+            "property_id": "393856569",
+            "property_name": "Eberle Eyecare",
+            "property_full_name": "properties/393856569",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:05:59.748000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275988612",
+        "account_name": "Complete Family Eye Care",
+        "account_full_name": "accounts/275988612",
+        "properties": [
+          {
+            "property_id": "393867023",
+            "property_name": "Complete Family Eye Care",
+            "property_full_name": "properties/393867023",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:31:33.592000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275990126",
+        "account_name": "Beecher Eye Care",
+        "account_full_name": "accounts/275990126",
+        "properties": [
+          {
+            "property_id": "393860348",
+            "property_name": "Beecher Eye Care",
+            "property_full_name": "properties/393860348",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:21:03.523000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275991621",
+        "account_name": "Eye Love Smiles Eye & Dental",
+        "account_full_name": "accounts/275991621",
+        "properties": [
+          {
+            "property_id": "393869961",
+            "property_name": "Eye Love Smiles Eye & Dental",
+            "property_full_name": "properties/393869961",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:59:34.196000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275992528",
+        "account_name": "Vision Source Kingwood",
+        "account_full_name": "accounts/275992528",
+        "properties": [
+          {
+            "property_id": "393870849",
+            "property_name": "Vision Source Kingwood",
+            "property_full_name": "properties/393870849",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:13:52.617000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275992530",
+        "account_name": "Crystal Clear Eye Care",
+        "account_full_name": "accounts/275992530",
+        "properties": [
+          {
+            "property_id": "393870853",
+            "property_name": "Crystal Clear Eye Care",
+            "property_full_name": "properties/393870853",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:52:23.228000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275992933",
+        "account_name": "Leon Springs Vision Source",
+        "account_full_name": "accounts/275992933",
+        "properties": [
+          {
+            "property_id": "393873081",
+            "property_name": "Leon Springs Vision Source",
+            "property_full_name": "properties/393873081",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:25:01.536000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275993137",
+        "account_name": "Allendale Eye Care LLC",
+        "account_full_name": "accounts/275993137",
+        "properties": [
+          {
+            "property_id": "393872896",
+            "property_name": "Allendale Eye Care LLC",
+            "property_full_name": "properties/393872896",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:36:19.361000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275995257",
+        "account_name": "Great Rivers Eye Care",
+        "account_full_name": "accounts/275995257",
+        "properties": [
+          {
+            "property_id": "393876320",
+            "property_name": "Great Rivers Eye Care",
+            "property_full_name": "properties/393876320",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T20:23:00.325000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275998691",
+        "account_name": "Vision Source Winder",
+        "account_full_name": "accounts/275998691",
+        "properties": [
+          {
+            "property_id": "393861532",
+            "property_name": "Vision Source Winder",
+            "property_full_name": "properties/393861532",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:09:41.337000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275998698",
+        "account_name": "Sitterle Vision Source",
+        "account_full_name": "accounts/275998698",
+        "properties": [
+          {
+            "property_id": "393861556",
+            "property_name": "Sitterle Vision Source",
+            "property_full_name": "properties/393861556",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T20:14:24.942000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276000216",
+        "account_name": "Alex Vision Source",
+        "account_full_name": "accounts/276000216",
+        "properties": [
+          {
+            "property_id": "393883109",
+            "property_name": "Alex Vision Source",
+            "property_full_name": "properties/393883109",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T21:04:27.749000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276001330",
+        "account_name": "EyeSight",
+        "account_full_name": "accounts/276001330",
+        "properties": [
+          {
+            "property_id": "393884853",
+            "property_name": "EyeSight",
+            "property_full_name": "properties/393884853",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T22:01:37.920000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276004961",
+        "account_name": "Eye Care West Optometry Inc",
+        "account_full_name": "accounts/276004961",
+        "properties": [
+          {
+            "property_id": "393888167",
+            "property_name": "Eye Care West Optometry Inc",
+            "property_full_name": "properties/393888167",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T22:36:51.940000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276008090",
+        "account_name": "Eyecare Excellence",
+        "account_full_name": "accounts/276008090",
+        "properties": [
+          {
+            "property_id": "393876933",
+            "property_name": "Eyecare Excellence",
+            "property_full_name": "properties/393876933",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:40:58.251000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276009799",
+        "account_name": "Vision Source Aldine",
+        "account_full_name": "accounts/276009799",
+        "properties": [
+          {
+            "property_id": "393893374",
+            "property_name": "Vision Source Aldine",
+            "property_full_name": "properties/393893374",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T20:05:08.558000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276011920",
+        "account_name": "Impact Eyecare",
+        "account_full_name": "accounts/276011920",
+        "properties": [
+          {
+            "property_id": "393882673",
+            "property_name": "Impact Eyecare",
+            "property_full_name": "properties/393882673",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:49:09.429000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276025049",
+        "account_name": "Eye Care West Optometry OC",
+        "account_full_name": "accounts/276025049",
+        "properties": [
+          {
+            "property_id": "393882919",
+            "property_name": "Eye Care West Optometry OC",
+            "property_full_name": "properties/393882919",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T22:14:53.900000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276026036",
+        "account_name": "Aledo Family Eye Care",
+        "account_full_name": "accounts/276026036",
+        "properties": [
+          {
+            "property_id": "393864716",
+            "property_name": "Aledo Family Eye Care",
+            "property_full_name": "properties/393864716",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T19:28:43.059000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276029992",
+        "account_name": "Hertneky Vision Source (1)",
+        "account_full_name": "accounts/276029992",
+        "properties": [
+          {
+            "property_id": "393897852",
+            "property_name": "Hertneky Vision Source",
+            "property_full_name": "properties/393897852",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T21:48:10.687000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276472648",
+        "account_name": "Dr. Ken Merchant OD",
+        "account_full_name": "accounts/276472648",
+        "properties": [
+          {
+            "property_id": "394505586",
+            "property_name": "Dr. Ken Merchant OD",
+            "property_full_name": "properties/394505586",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T13:53:45.450000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276481048",
+        "account_name": "Alex Vision Source (Morris)",
+        "account_full_name": "accounts/276481048",
+        "properties": [
+          {
+            "property_id": "394480531",
+            "property_name": "Alex Vision Source",
+            "property_full_name": "properties/394480531",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T13:45:47.665000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276483473",
+        "account_name": "Westside Eye Center",
+        "account_full_name": "accounts/276483473",
+        "properties": [
+          {
+            "property_id": "394487540",
+            "property_name": "Westside Eye Center",
+            "property_full_name": "properties/394487540",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T14:09:07.659000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276483978",
+        "account_name": "Denver Eye Care",
+        "account_full_name": "accounts/276483978",
+        "properties": [
+          {
+            "property_id": "394493194",
+            "property_name": "Denver Eye Care",
+            "property_full_name": "properties/394493194",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T14:00:28.924000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276490853",
+        "account_name": "Blackstone Optometry",
+        "account_full_name": "accounts/276490853",
+        "properties": [
+          {
+            "property_id": "394488464",
+            "property_name": "Blackstone Optometry",
+            "property_full_name": "properties/394488464",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T14:12:45.945000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276518541",
+        "account_name": "Sandra L Stevens OD",
+        "account_full_name": "accounts/276518541",
+        "properties": [
+          {
+            "property_id": "394557598",
+            "property_name": "Sandra L Stevens OD",
+            "property_full_name": "properties/394557598",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T14:04:13.953000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276524210",
+        "account_name": "Dr. David M Girardi",
+        "account_full_name": "accounts/276524210",
+        "properties": [
+          {
+            "property_id": "394549386",
+            "property_name": "Dr. David M Girardi",
+            "property_full_name": "properties/394549386",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T14:17:34.045000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276564167",
+        "account_name": "Revolution Eyes",
+        "account_full_name": "accounts/276564167",
+        "properties": [
+          {
+            "property_id": "394585584",
+            "property_name": "Revolution Eyes",
+            "property_full_name": "properties/394585584",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-05T14:23:06.033000+00:00"
+          }
+        ]
       }
     ]
   },
   "account4": {
-    "account_email": "luxoticasupport4@eulerity.com",
+    "account_email": "luxotticasupport4@eulerity.com",
     "accounts": [
       {
         "account_id": "2907880",
@@ -4371,6 +7013,973 @@
             "create_time": "2023-11-19T22:26:59+00:00"
           }
         ]
+      },
+      {
+        "account_id": "261121237",
+        "account_name": "northernmichiganvisionsource.com",
+        "account_full_name": "accounts/261121237",
+        "properties": [
+          {
+            "property_id": "371414027",
+            "property_name": "northernmichiganvisionsource.com - GA4",
+            "property_full_name": "properties/371414027",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-21T03:12:18.697000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "265158116",
+        "account_name": "20/20 Vision Express",
+        "account_full_name": "accounts/265158116",
+        "properties": [
+          {
+            "property_id": "368184106",
+            "property_name": "20/20 Vision Express - GA4",
+            "property_full_name": "properties/368184106",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-04-13T07:37:33.360000+00:00"
+          },
+          {
+            "property_id": "370511495",
+            "property_name": "Placeholder",
+            "property_full_name": "properties/370511495",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-04-20T16:06:56.595000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "270583763",
+        "account_name": "abceyecare.com",
+        "account_full_name": "accounts/270583763",
+        "properties": [
+          {
+            "property_id": "379760583",
+            "property_name": "abceyecare.com",
+            "property_full_name": "properties/379760583",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-01T21:02:11.200000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275158628",
+        "account_name": "makanavision.com",
+        "account_full_name": "accounts/275158628",
+        "properties": [
+          {
+            "property_id": "390233844",
+            "property_name": "makanavision.com",
+            "property_full_name": "properties/390233844",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-26T21:40:27.249000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275497717",
+        "account_name": "ProOptix Eye Care",
+        "account_full_name": "accounts/275497717",
+        "properties": [
+          {
+            "property_id": "391399802",
+            "property_name": "ProOptix Eye Care",
+            "property_full_name": "properties/391399802",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 7,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-06-28T15:56:03.226000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "275886106",
+        "account_name": "specs analytics",
+        "account_full_name": "accounts/275886106",
+        "properties": [
+          {
+            "property_id": "393354310",
+            "property_name": "specs appeal",
+            "property_full_name": "properties/393354310",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-06-30T13:56:56.179000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276371864",
+        "account_name": "visionsource-aldine.com",
+        "account_full_name": "accounts/276371864",
+        "properties": [
+          {
+            "property_id": "394341930",
+            "property_name": "visionsource-aldine.com - GA4",
+            "property_full_name": "properties/394341930",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-07-03T16:54:43.119000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "277159120",
+        "account_name": "PERC Campaign",
+        "account_full_name": "accounts/277159120",
+        "properties": [
+          {
+            "property_id": "395302488",
+            "property_name": "PERC Campaign",
+            "property_full_name": "properties/395302488",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-10T19:46:30.502000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "277994905",
+        "account_name": "Pioneer Family EyeCare",
+        "account_full_name": "accounts/277994905",
+        "properties": [
+          {
+            "property_id": "397147169",
+            "property_name": "Pioneer Family EyeCare",
+            "property_full_name": "properties/397147169",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-07-18T01:33:40.737000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "279874651",
+        "account_name": "nobleeyes.net",
+        "account_full_name": "accounts/279874651",
+        "properties": [
+          {
+            "property_id": "400491438",
+            "property_name": "nobleeyes.net - GA4",
+            "property_full_name": "properties/400491438",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-07-28T16:51:39.875000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "281133312",
+        "account_name": "Vonnahme Eye Care",
+        "account_full_name": "accounts/281133312",
+        "properties": [
+          {
+            "property_id": "401963208",
+            "property_name": "www.vonnahmeeyecare.com",
+            "property_full_name": "properties/401963208",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-08-08T22:29:30.540000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "282669389",
+        "account_name": "Landsaw Eyecare",
+        "account_full_name": "accounts/282669389",
+        "properties": [
+          {
+            "property_id": "403776798",
+            "property_name": "Landsaw Eyecare",
+            "property_full_name": "properties/403776798",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-08-22T20:49:59.004000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "282876512",
+        "account_name": "kenteyeclinic.com",
+        "account_full_name": "accounts/282876512",
+        "properties": [
+          {
+            "property_id": "403988950",
+            "property_name": "kenteyeclinic.com (GA4)",
+            "property_full_name": "properties/403988950",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-08-23T18:33:32.184000+00:00"
+          },
+          {
+            "property_id": "404010517",
+            "property_name": "contactsanddryeyes.com (GA4)",
+            "property_full_name": "properties/404010517",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-08-23T19:41:42.855000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "284958245",
+        "account_name": "Vision Performance Optometric Center",
+        "account_full_name": "accounts/284958245",
+        "properties": [
+          {
+            "property_id": "406496724",
+            "property_name": "Vision Performance Optometric Center",
+            "property_full_name": "properties/406496724",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 7,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-09-12T18:39:27.214000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "284994253",
+        "account_name": "Eulerity Analytics",
+        "account_full_name": "accounts/284994253",
+        "properties": [
+          {
+            "property_id": "406527072",
+            "property_name": "Invision Optometry",
+            "property_full_name": "properties/406527072",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-09-11T22:32:16.499000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "285045739",
+        "account_name": "716 Eye care",
+        "account_full_name": "accounts/285045739",
+        "properties": [
+          {
+            "property_id": "406587359",
+            "property_name": "716 Eye Care ",
+            "property_full_name": "properties/406587359",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-09-12T18:32:12.672000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "286490491",
+        "account_name": "Vision Source Howell ",
+        "account_full_name": "accounts/286490491",
+        "properties": [
+          {
+            "property_id": "408210590",
+            "property_name": "Vision Source Howell ",
+            "property_full_name": "properties/408210590",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-09-24T03:08:08.273000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "291353254",
+        "account_name": "Eye Vantage",
+        "account_full_name": "accounts/291353254",
+        "properties": [
+          {
+            "property_id": "413886264",
+            "property_name": "Eye Vantage",
+            "property_full_name": "properties/413886264",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-10-30T20:28:27.051000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "293165173",
+        "account_name": "Vision Source Exchange",
+        "account_full_name": "accounts/293165173",
+        "properties": [
+          {
+            "property_id": "416044500",
+            "property_name": "Vision Source Exchange",
+            "property_full_name": "properties/416044500",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-11-14T20:54:54.445000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "295672471",
+        "account_name": " Elevate Eye Care",
+        "account_full_name": "accounts/295672471",
+        "properties": [
+          {
+            "property_id": "418987577",
+            "property_name": " Elevate Eye Care",
+            "property_full_name": "properties/418987577",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-12-06T19:47:03.747000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "295770078",
+        "account_name": "Vision Source Next",
+        "account_full_name": "accounts/295770078",
+        "properties": [
+          {
+            "property_id": "419067146",
+            "property_name": "Vision Source Next",
+            "property_full_name": "properties/419067146",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-12-07T18:04:28.416000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "297732011",
+        "account_name": "peaksightfamilyeyecare.com",
+        "account_full_name": "accounts/297732011",
+        "properties": [
+          {
+            "property_id": "421777389",
+            "property_name": "peaksightfamilyeyecare.com",
+            "property_full_name": "properties/421777389",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-01-03T21:12:59.229000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "298236142",
+        "account_name": "Vision Source Cypress",
+        "account_full_name": "accounts/298236142",
+        "properties": [
+          {
+            "property_id": "422434751",
+            "property_name": "Vision Source Cypress",
+            "property_full_name": "properties/422434751",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-01-09T16:01:58.471000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "298279340",
+        "account_name": "Vision Source Copperfield",
+        "account_full_name": "accounts/298279340",
+        "properties": [
+          {
+            "property_id": "422466117",
+            "property_name": "Vision Source Copperfield",
+            "property_full_name": "properties/422466117",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-01-09T15:54:29.489000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "299537905",
+        "account_name": "Eyes On Central",
+        "account_full_name": "accounts/299537905",
+        "properties": [
+          {
+            "property_id": "424056937",
+            "property_name": "Eyes On Central",
+            "property_full_name": "properties/424056937",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-01-19T14:37:00.774000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "300701859",
+        "account_name": "EyeGen",
+        "account_full_name": "accounts/300701859",
+        "properties": [
+          {
+            "property_id": "425356704",
+            "property_name": "EyeGenStats",
+            "property_full_name": "properties/425356704",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-01-30T01:36:35.305000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "300732653",
+        "account_name": "LUMI\u00c8RE OPTOMETRY",
+        "account_full_name": "accounts/300732653",
+        "properties": [
+          {
+            "property_id": "425377499",
+            "property_name": "lumiereoptometry.com",
+            "property_full_name": "properties/425377499",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 0,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-01-30T02:33:41.614000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "303342077",
+        "account_name": "Vision Veritas",
+        "account_full_name": "accounts/303342077",
+        "properties": [
+          {
+            "property_id": "428576334",
+            "property_name": "Vision Veritas - GA4",
+            "property_full_name": "properties/428576334",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-02-21T20:51:09.778000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "304857750",
+        "account_name": "truesightvisioncenter.com",
+        "account_full_name": "accounts/304857750",
+        "properties": [
+          {
+            "property_id": "430286466",
+            "property_name": "truesightvisioncenter.com",
+            "property_full_name": "properties/430286466",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-03-04T19:08:46.863000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "305739234",
+        "account_name": "Golden State Optometry",
+        "account_full_name": "accounts/305739234",
+        "properties": [
+          {
+            "property_id": "431319183",
+            "property_name": "Golden State Optometry",
+            "property_full_name": "properties/431319183",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-03-11T15:55:56.929000+00:00"
+          },
+          {
+            "property_id": "491536789",
+            "property_name": "https://www.goldenstateoptometry.com",
+            "property_full_name": "properties/491536789",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-06-02T20:01:42.194000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "308659250",
+        "account_name": "EFL ",
+        "account_full_name": "accounts/308659250",
+        "properties": [
+          {
+            "property_id": "434848454",
+            "property_name": "Eyes For Life",
+            "property_full_name": "properties/434848454",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-01T22:31:03.950000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "309782177",
+        "account_name": "The Look Eyecare Center",
+        "account_full_name": "accounts/309782177",
+        "properties": [
+          {
+            "property_id": "436236340",
+            "property_name": "The Look Eyecare Center",
+            "property_full_name": "properties/436236340",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 7,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-12T17:26:50.821000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311494210",
+        "account_name": "Dau Family Eye Care",
+        "account_full_name": "accounts/311494210",
+        "properties": [
+          {
+            "property_id": "438227584",
+            "property_name": "Dau Family Eye Care",
+            "property_full_name": "properties/438227584",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-04-25T00:13:21.488000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311636085",
+        "account_name": "John W Barnhart OD",
+        "account_full_name": "accounts/311636085",
+        "properties": [
+          {
+            "property_id": "438391588",
+            "property_name": "John W Barnhart OD",
+            "property_full_name": "properties/438391588",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 23,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-26T14:57:36.787000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311691319",
+        "account_name": "Dr. Mark Sorrentino O.D.",
+        "account_full_name": "accounts/311691319",
+        "properties": [
+          {
+            "property_id": "438413932",
+            "property_name": "Dr. Mark Sorrentino O.D.",
+            "property_full_name": "properties/438413932",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 23,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-26T15:47:55.072000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311729549",
+        "account_name": "The Vision Store",
+        "account_full_name": "accounts/311729549",
+        "properties": [
+          {
+            "property_id": "438467262",
+            "property_name": "The Vision Store",
+            "property_full_name": "properties/438467262",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 23,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-26T15:56:24.138000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311742947",
+        "account_name": "Vision Source Villa Rica",
+        "account_full_name": "accounts/311742947",
+        "properties": [
+          {
+            "property_id": "438528520",
+            "property_name": "Vision Source Villa Rica",
+            "property_full_name": "properties/438528520",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 23,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-26T16:19:33.929000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311756658",
+        "account_name": "Capitol Eyes",
+        "account_full_name": "accounts/311756658",
+        "properties": [
+          {
+            "property_id": "438534982",
+            "property_name": "Capitol Eyes",
+            "property_full_name": "properties/438534982",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 23,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-26T16:09:09.633000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "311777262",
+        "account_name": "Creekside Family Eye Care",
+        "account_full_name": "accounts/311777262",
+        "properties": [
+          {
+            "property_id": "438560838",
+            "property_name": "Creekside Family Eye Care",
+            "property_full_name": "properties/438560838",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 23,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-04-26T16:25:17.068000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "313803973",
+        "account_name": "Merrick Avenue Optometry",
+        "account_full_name": "accounts/313803973",
+        "properties": [
+          {
+            "property_id": "440906282",
+            "property_name": "Merrick Avenue Optometry",
+            "property_full_name": "properties/440906282",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 7,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-05-13T18:03:26.169000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "314015602",
+        "account_name": "Impact Eyecare ",
+        "account_full_name": "accounts/314015602",
+        "properties": [
+          {
+            "property_id": "441264735",
+            "property_name": "Impact Eyecare ",
+            "property_full_name": "properties/441264735",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-05-14T21:44:45.571000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "315205314",
+        "account_name": "visionsourcemustang@gmail.com",
+        "account_full_name": "accounts/315205314",
+        "properties": [
+          {
+            "property_id": "442708647",
+            "property_name": "visionsourcemustang@gmail.com",
+            "property_full_name": "properties/442708647",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-05-23T20:10:42.903000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "315268744",
+        "account_name": "Giannotti Vision Care",
+        "account_full_name": "accounts/315268744",
+        "properties": [
+          {
+            "property_id": "442778945",
+            "property_name": "Giannotti Vision Care",
+            "property_full_name": "properties/442778945",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-05-23T22:36:44.644000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "319655384",
+        "account_name": "Modern Eye Gallery",
+        "account_full_name": "accounts/319655384",
+        "properties": [
+          {
+            "property_id": "447805848",
+            "property_name": "Modern Eye Gallery",
+            "property_full_name": "properties/447805848",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-06-25T20:38:45.458000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "324603897",
+        "account_name": "capitoleyes",
+        "account_full_name": "accounts/324603897",
+        "properties": [
+          {
+            "property_id": "453518149",
+            "property_name": "Capitol Eyes",
+            "property_full_name": "properties/453518149",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-08-08T14:24:14.655000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "326910596",
+        "account_name": "hancockeyeassociates.com",
+        "account_full_name": "accounts/326910596",
+        "properties": [
+          {
+            "property_id": "456162524",
+            "property_name": "hancockeyeassociates.com",
+            "property_full_name": "properties/456162524",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-08-27T18:34:05.284000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "331040116",
+        "account_name": "Aleksandra Wianecka",
+        "account_full_name": "accounts/331040116",
+        "properties": [
+          {
+            "property_id": "460793305",
+            "property_name": "visionforlifeod.com",
+            "property_full_name": "properties/460793305",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-09-30T04:36:56.815000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "332397488",
+        "account_name": "Complete Family Eye Care",
+        "account_full_name": "accounts/332397488",
+        "properties": [
+          {
+            "property_id": "462414307",
+            "property_name": "Main",
+            "property_full_name": "properties/462414307",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-10-10T11:25:55.648000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "333302648",
+        "account_name": "Advanced Eye Care Professionals",
+        "account_full_name": "accounts/333302648",
+        "properties": [
+          {
+            "property_id": "463454716",
+            "property_name": "VS AECP",
+            "property_full_name": "properties/463454716",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-10-15T18:48:09.192000+00:00"
+          }
+        ]
       }
     ]
   },
@@ -5587,6 +9196,614 @@
             "time_zone": "America/Los_Angeles",
             "currency_code": "USD",
             "create_time": "2023-06-01T22:18:55.641000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "267315451",
+        "account_name": "Horvath Vision Care Northwoods",
+        "account_full_name": "accounts/267315451",
+        "properties": [
+          {
+            "property_id": "374283553",
+            "property_name": "Horvath Vision Care Northwoods",
+            "property_full_name": "properties/374283553",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2023-05-05T18:38:51.522000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "272891948",
+        "account_name": "Vision Trends Eye Care",
+        "account_full_name": "accounts/272891948",
+        "properties": [
+          {
+            "property_id": "482447684",
+            "property_name": "Kuzo Eye Care",
+            "property_full_name": "properties/482447684",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-03-18T11:10:43.063000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "274772270",
+        "account_name": "Modern Spectacle",
+        "account_full_name": "accounts/274772270",
+        "properties": [
+          {
+            "property_id": "388277390",
+            "property_name": "modspect",
+            "property_full_name": "properties/388277390",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-06-23T05:36:39.552000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "276291593",
+        "account_name": "visionsource-ramseyeyecare.com",
+        "account_full_name": "accounts/276291593",
+        "properties": [
+          {
+            "property_id": "394212783",
+            "property_name": "visionsource-ramseyeyecare.com - GA4",
+            "property_full_name": "properties/394212783",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Denver",
+            "currency_code": "USD",
+            "create_time": "2023-07-01T17:15:04.387000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "281133312",
+        "account_name": "Vonnahme Eye Care",
+        "account_full_name": "accounts/281133312",
+        "properties": [
+          {
+            "property_id": "401963208",
+            "property_name": "www.vonnahmeeyecare.com",
+            "property_full_name": "properties/401963208",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2023-08-08T22:29:30.540000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "292258441",
+        "account_name": "Vision Source of Hays",
+        "account_full_name": "accounts/292258441",
+        "properties": [
+          {
+            "property_id": "415005029",
+            "property_name": "vshays.com",
+            "property_full_name": "properties/415005029",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2023-11-07T21:05:48.767000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "313194369",
+        "account_name": "Thrive Eye + Optical",
+        "account_full_name": "accounts/313194369",
+        "properties": [
+          {
+            "property_id": "440205365",
+            "property_name": "Thrive Eye + Optical",
+            "property_full_name": "properties/440205365",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-05-08T18:22:07.785000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "318085454",
+        "account_name": "Vision Source Tulsa",
+        "account_full_name": "accounts/318085454",
+        "properties": [
+          {
+            "property_id": "445995263",
+            "property_name": "Vision Source Tulsa",
+            "property_full_name": "properties/445995263",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-06-13T14:34:43.593000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "321146357",
+        "account_name": "winfameyecare.com",
+        "account_full_name": "accounts/321146357",
+        "properties": [
+          {
+            "property_id": "449533117",
+            "property_name": "winfameyecare.com",
+            "property_full_name": "properties/449533117",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-07-09T21:38:59.503000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "326559678",
+        "account_name": "completeeyehealth.com",
+        "account_full_name": "accounts/326559678",
+        "properties": [
+          {
+            "property_id": "455820258",
+            "property_name": "completeeyehealth.com",
+            "property_full_name": "properties/455820258",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-08-23T15:09:15.839000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "326620511",
+        "account_name": "elliotteye.com",
+        "account_full_name": "accounts/326620511",
+        "properties": [
+          {
+            "property_id": "455797678",
+            "property_name": "elliotteye.com",
+            "property_full_name": "properties/455797678",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-08-23T16:42:51.368000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "333924111",
+        "account_name": "mcbridevisionclinic.com",
+        "account_full_name": "accounts/333924111",
+        "properties": [
+          {
+            "property_id": "464172271",
+            "property_name": "mcbridevisionclinic.com",
+            "property_full_name": "properties/464172271",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-10-21T15:27:38.700000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "334737281",
+        "account_name": "1676294027492950400",
+        "account_full_name": "accounts/334737281",
+        "properties": [
+          {
+            "property_id": "465143450",
+            "property_name": "Life Vision Eyecare",
+            "property_full_name": "properties/465143450",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-10-29T01:11:27.076000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "336759533",
+        "account_name": "bexareyecare.com",
+        "account_full_name": "accounts/336759533",
+        "properties": [
+          {
+            "property_id": "467524670",
+            "property_name": "bexareyecare.com",
+            "property_full_name": "properties/467524670",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2024-11-15T17:02:41.548000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "337430940",
+        "account_name": "https://www.eyeconsee.com/",
+        "account_full_name": "accounts/337430940",
+        "properties": [
+          {
+            "property_id": "468339916",
+            "property_name": "https://www.eyeconsee.com/",
+            "property_full_name": "properties/468339916",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2024-11-22T00:15:26.266000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "338617892",
+        "account_name": "Google Ads Account",
+        "account_full_name": "accounts/338617892",
+        "properties": [
+          {
+            "property_id": "469826091",
+            "property_name": "visionsource-jaffrey.com",
+            "property_full_name": "properties/469826091",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2024-12-09T18:13:32.364000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "343309199",
+        "account_name": "Eyes on Wesley Chapel",
+        "account_full_name": "accounts/343309199",
+        "properties": [
+          {
+            "property_id": "475386346",
+            "property_name": "Eyes on Wesley Chapel",
+            "property_full_name": "properties/475386346",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/New_York",
+            "currency_code": "USD",
+            "create_time": "2025-01-29T16:55:28.130000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "347359218",
+        "account_name": "Lumen Optometric Center",
+        "account_full_name": "accounts/347359218",
+        "properties": [
+          {
+            "property_id": "479947891",
+            "property_name": "Lumen Optometric Center",
+            "property_full_name": "properties/479947891",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-02-26T18:11:42.362000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "352337346",
+        "account_name": "sunburstoptical.com",
+        "account_full_name": "accounts/352337346",
+        "properties": [
+          {
+            "property_id": "485785466",
+            "property_name": "sunburstoptical.com",
+            "property_full_name": "properties/485785466",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-04-15T16:49:49.734000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "353054962",
+        "account_name": "gardnereyecare.com",
+        "account_full_name": "accounts/353054962",
+        "properties": [
+          {
+            "property_id": "486685127",
+            "property_name": "gardnereyecare.com",
+            "property_full_name": "properties/486685127",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2025-04-23T18:04:53.262000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "353185605",
+        "account_name": "lecvisionsource.com",
+        "account_full_name": "accounts/353185605",
+        "properties": [
+          {
+            "property_id": "486832977",
+            "property_name": "lecvisionsource.com",
+            "property_full_name": "properties/486832977",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/North_Dakota/Center",
+            "currency_code": "USD",
+            "create_time": "2025-04-24T18:39:33.642000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "353979629",
+        "account_name": "visionsource-drball.com",
+        "account_full_name": "accounts/353979629",
+        "properties": [
+          {
+            "property_id": "487785899",
+            "property_name": "visionsource-drball.com",
+            "property_full_name": "properties/487785899",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-05-02T15:12:48.417000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "354146804",
+        "account_name": "Dr. Laura Young",
+        "account_full_name": "accounts/354146804",
+        "properties": [
+          {
+            "property_id": "487976200",
+            "property_name": "VALLEY OPTOMETRIC GROUP",
+            "property_full_name": "properties/487976200",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-05-05T16:24:22.855000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "355412144",
+        "account_name": "Meadowbrook Eye Care",
+        "account_full_name": "accounts/355412144",
+        "properties": [
+          {
+            "property_id": "489466469",
+            "property_name": "Meadowbrook Eye Care",
+            "property_full_name": "properties/489466469",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2025-05-15T14:19:50.084000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "355569873",
+        "account_name": "refinedsightsienna.com",
+        "account_full_name": "accounts/355569873",
+        "properties": [
+          {
+            "property_id": "489651335",
+            "property_name": "refinedsightsienna.com",
+            "property_full_name": "properties/489651335",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2025-05-16T20:14:06.156000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "355572411",
+        "account_name": "Hip Optics Vision Source",
+        "account_full_name": "accounts/355572411",
+        "properties": [
+          {
+            "property_id": "489654380",
+            "property_name": "Hip Optics Optometry",
+            "property_full_name": "properties/489654380",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-05-16T20:31:50.036000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "355580378",
+        "account_name": "hertnekyvisioncare.com",
+        "account_full_name": "accounts/355580378",
+        "properties": [
+          {
+            "property_id": "489664363",
+            "property_name": "hertnekyvisioncare.com",
+            "property_full_name": "properties/489664363",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Denver",
+            "currency_code": "USD",
+            "create_time": "2025-05-16T20:21:59.843000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "355730880",
+        "account_name": "Mountain View Vision",
+        "account_full_name": "accounts/355730880",
+        "properties": [
+          {
+            "property_id": "489870405",
+            "property_name": "Mountain View Vision",
+            "property_full_name": "properties/489870405",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-05-19T22:18:03.486000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "357669282",
+        "account_name": "Advanced Optometry",
+        "account_full_name": "accounts/357669282",
+        "properties": [
+          {
+            "property_id": "492165100",
+            "property_name": "Advanced Optometry",
+            "property_full_name": "properties/492165100",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-06-05T16:00:27.488000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "358450019",
+        "account_name": "2020eyecareoflondon@gmail.com",
+        "account_full_name": "accounts/358450019",
+        "properties": [
+          {
+            "property_id": "493067673",
+            "property_name": "2020eyecareoflondon@gmail.com",
+            "property_full_name": "properties/493067673",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-06-12T17:50:28.918000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "360133232",
+        "account_name": "VS Gateway Tour",
+        "account_full_name": "accounts/360133232",
+        "properties": [
+          {
+            "property_id": "495163905",
+            "property_name": "VS Gateway Tour",
+            "property_full_name": "properties/495163905",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Los_Angeles",
+            "currency_code": "USD",
+            "create_time": "2025-06-30T23:13:48.664000+00:00"
+          }
+        ]
+      },
+      {
+        "account_id": "361190474",
+        "account_name": "upperkirbyeyecare.com",
+        "account_full_name": "accounts/361190474",
+        "properties": [
+          {
+            "property_id": "496422772",
+            "property_name": "upperkirbyeyecare.com",
+            "property_full_name": "properties/496422772",
+            "property_type": "PROPERTY_TYPE_GA4",
+            "original_api_type": "PROPERTY_TYPE_ORDINARY",
+            "website_url": "",
+            "industry_category": 4,
+            "time_zone": "America/Chicago",
+            "currency_code": "USD",
+            "create_time": "2025-07-11T14:32:22.746000+00:00"
           }
         ]
       }

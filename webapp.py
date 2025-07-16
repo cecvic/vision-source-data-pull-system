@@ -490,11 +490,15 @@ def generate_custom_report(start_date, end_date, page_path_filter=None, property
                         individual_appointment_events = get_individual_appointment_events(client, property_id, start_date, end_date, page_path_filter)
                         app.logger.info(f"Individual appointment events for {property_name}: {len(individual_appointment_events)} different events")
                         
+                        # Calculate total new users from all sources
+                        total_new_users = sum(item['new_users'] for item in source_medium_data)
+                        
                         report_data.append({
                             'property_name': property_name,
                             'property_id': property_id,
                             'source_medium_data': source_medium_data,
-                            'appointment_events': individual_appointment_events
+                            'appointment_events': individual_appointment_events,
+                            'total_new_users': total_new_users
                         })
                         
                     except Exception as e:
@@ -504,6 +508,7 @@ def generate_custom_report(start_date, end_date, page_path_filter=None, property
                             'property_id': property_id,
                             'source_medium_data': [],
                             'appointment_events': [],
+                            'total_new_users': 0,
                             'error': str(e)
                         })
                         
@@ -600,7 +605,7 @@ def categorize_source_medium(source, medium):
         return 'google/organic'
     elif source_lower == 'eulerity' and medium_lower == 'ads':
         return 'eulerity/ads'
-    elif source_lower == 'direct' and medium_lower == '(none)':
+    elif source_lower == '(direct)' and medium_lower == '(none)':
         return 'direct/none'
     else:
         return 'others'
@@ -761,7 +766,7 @@ def generate_csv_report(report_data):
     # Write header with new columns
     writer.writerow([
         'Property Name', 'Property ID', 
-        'Google/Organic New Users', 'Eulerity/Ads New Users', 'Direct/None New Users', 'Others New Users',
+        'Google/Organic New Users', 'Eulerity/Ads New Users', 'Direct/None New Users', 'Others New Users', 'Total New Users',
         'Appointment Event Names', 'Appointment Event Counts', 'Total Appointment Events',
         'Error'
     ])
@@ -794,6 +799,7 @@ def generate_csv_report(report_data):
             eulerity_ads,
             direct_none,
             others,
+            row.get('total_new_users', 0),
             event_names_str,
             event_counts_str,
             total_events,

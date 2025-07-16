@@ -103,6 +103,7 @@
                                     <th>Eulerity/Ads</th>
                                     <th>Direct/None</th>
                                     <th>Others</th>
+                                    <th>Total New Users</th>
                                     <th>Appointment Events</th>
                                     <th>Status</th>
                                 </tr>
@@ -118,6 +119,7 @@
                                         <td><span class="text-muted">-</span></td>
                                         <td><span class="text-muted">-</span></td>
                                         <td><span class="text-muted">-</span></td>
+                                        <td><span class="text-muted">-</span></td>
                                     {% else %}
                                         {% set source_medium_dict = {} %}
                                         {% for item in row.source_medium_data %}
@@ -128,6 +130,7 @@
                                         <td><span class="badge bg-warning">{{ source_medium_dict.get('eulerity/ads', 0) }}</span></td>
                                         <td><span class="badge bg-info">{{ source_medium_dict.get('direct/none', 0) }}</span></td>
                                         <td><span class="badge bg-secondary">{{ source_medium_dict.get('others', 0) }}</span></td>
+                                        <td><span class="badge bg-primary">{{ row.total_new_users }}</span></td>
                                         <td>
                                             {% if row.appointment_events %}
                                                 <div class="dropdown">
@@ -171,6 +174,22 @@
                                 <div class="card-body text-center">
                                     <h6 class="card-title">Total Properties</h6>
                                     <h4 class="text-primary">{{ report_data|length }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Total New Users</h6>
+                                    <h4>
+                                        {% set total_new_users_sum = 0 %}
+                                        {% for row in report_data %}
+                                            {% if not row.error %}
+                                                {% set total_new_users_sum = total_new_users_sum + row.total_new_users %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ total_new_users_sum }}
+                                    </h4>
                                 </div>
                             </div>
                         </div>

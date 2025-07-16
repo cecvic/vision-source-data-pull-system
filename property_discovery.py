@@ -39,16 +39,40 @@ class PropertyDiscovery:
         try:
             client = self.get_admin_client(account_name)
             
-            # List all accounts the user has access to
-            accounts_request = ListAccountsRequest()
-            accounts_response = client.list_accounts(request=accounts_request)
+            # List all accounts the user has access to with pagination
+            all_accounts = []
+            page_token = None
+            accounts_page_count = 0
+            
+            while True:
+                accounts_page_count += 1
+                self.logger.info(f"Fetching page {accounts_page_count} of accounts for {account_name}")
+                
+                accounts_request = ListAccountsRequest(
+                    page_size=200,  # Maximum page size
+                    page_token=page_token
+                )
+                accounts_response = client.list_accounts(request=accounts_request)
+                
+                # Add accounts from this page
+                page_accounts = list(accounts_response.accounts)
+                all_accounts.extend(page_accounts)
+                self.logger.info(f"Accounts page {accounts_page_count}: Found {len(page_accounts)} accounts")
+                
+                # Check if there are more pages
+                page_token = accounts_response.next_page_token
+                if not page_token:
+                    break
+            
+            total_accounts_found = len(all_accounts)
+            self.logger.info(f"Found {total_accounts_found} total accounts across {accounts_page_count} pages for {account_name}")
             
             discovered_data = {
                 'account_email': self.config['accounts'][account_name]['email'],
                 'accounts': []
             }
             
-            for account in accounts_response.accounts:
+            for account in all_accounts:
                 account_data = {
                     'account_id': account.name.split('/')[-1],
                     'account_name': account.display_name,
@@ -56,19 +80,42 @@ class PropertyDiscovery:
                     'properties': []
                 }
                 
-                # List properties for this account
+                # List properties for this account with pagination
                 try:
                     self.logger.info(f"Listing properties for account: {account.display_name} (ID: {account.name})")
-                    properties_request = ListPropertiesRequest(filter=f"parent:{account.name}")
-                    properties_response = client.list_properties(request=properties_request)
                     
-                    total_properties_found = len(list(properties_response.properties))
-                    self.logger.info(f"Found {total_properties_found} total properties for account {account.display_name}")
+                    # Handle pagination - fetch ALL properties
+                    all_properties = []
+                    page_token = None
+                    page_count = 0
+                    
+                    while True:
+                        page_count += 1
+                        self.logger.info(f"Fetching page {page_count} of properties for account {account.display_name}")
+                        
+                        properties_request = ListPropertiesRequest(
+                            filter=f"parent:{account.name}",
+                            page_token=page_token
+                        )
+                        properties_response = client.list_properties(request=properties_request)
+                        
+                        # Add properties from this page
+                        page_properties = list(properties_response.properties)
+                        all_properties.extend(page_properties)
+                        self.logger.info(f"Page {page_count}: Found {len(page_properties)} properties")
+                        
+                        # Check if there are more pages
+                        page_token = properties_response.next_page_token
+                        if not page_token:
+                            break
+                    
+                    total_properties_found = len(all_properties)
+                    self.logger.info(f"Found {total_properties_found} total properties across {page_count} pages for account {account.display_name}")
                     
                     ga4_count = 0
                     ua_count = 0
                     
-                    for property_obj in properties_response.properties:
+                    for property_obj in all_properties:
                         original_property_type = property_obj.property_type.name
                         
                         # Override: Treat all properties as GA4 since they've been migrated

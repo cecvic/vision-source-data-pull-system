@@ -1,0 +1,1 @@
+Always make sure when you are running any project python files, please ensure the virtual environment from the project root folder :/home/cecvic/vision-source-pull/.venv  is activated. the command is source .venv/bin/activate when running from a bash terminal

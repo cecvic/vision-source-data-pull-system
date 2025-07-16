@@ -40,17 +40,35 @@
                     </div>
                     
                     <div class="row mb-3">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
+                            <label for="property_filter" class="form-label">Property Filter (Optional)</label>
+                            <textarea class="form-control" id="property_filter" name="property_filter" rows="4" 
+                                      placeholder="Enter property IDs separated by commas or line breaks. Example:&#10;382317365, 385919695&#10;416770231&#10;379740345">{{ property_filter or '' }}</textarea>
+                            <small class="form-text text-muted">
+                                <i class="bi bi-info-circle"></i> Leave empty to analyze all properties, or enter specific property IDs to analyze only those properties.
+                            </small>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-4">
                             <div class="d-grid">
                                 <button type="submit" name="download_csv" value="true" class="btn btn-success">
                                     <i class="bi bi-download"></i> Download as CSV
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="d-grid">
                                 <button type="button" class="btn btn-info" onclick="setQuickDateRange('30')">
                                     <i class="bi bi-clock"></i> Last 30 Days
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-outline-secondary" onclick="clearPropertyFilter()">
+                                    <i class="bi bi-x-circle"></i> Clear Property Filter
                                 </button>
                             </div>
                         </div>
@@ -61,7 +79,19 @@
                 <hr>
                 <div class="mt-4">
                     <h6>Report Results ({{ start_date }} to {{ end_date }})</h6>
-                    <p class="text-muted">Showing {{ report_data|length }} properties</p>
+                    <p class="text-muted">
+                        Showing {{ report_data|length }} properties
+                        {% if property_filter %}
+                            <span class="badge bg-info ms-2">
+                                <i class="bi bi-filter"></i> Property Filter Applied
+                            </span>
+                        {% endif %}
+                        {% if page_path_filter %}
+                            <span class="badge bg-warning ms-2">
+                                <i class="bi bi-search"></i> Page Path: {{ page_path_filter }}
+                            </span>
+                        {% endif %}
+                    </p>
                     
                     <div class="table-responsive">
                         <table class="table table-striped table-hover">
@@ -274,6 +304,10 @@ function setQuickDateRange(days) {
     
     document.getElementById('start_date').value = startDate.toISOString().split('T')[0];
     document.getElementById('end_date').value = endDate.toISOString().split('T')[0];
+}
+
+function clearPropertyFilter() {
+    document.getElementById('property_filter').value = '';
 }
 
 document.getElementById('customReportForm').addEventListener('submit', function(e) {

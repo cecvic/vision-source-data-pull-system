@@ -368,13 +368,17 @@ def custom_report():
         start_date = request.form.get('start_date')
         end_date = request.form.get('end_date')
         page_path_filter = request.form.get('page_path_filter', '').strip()
+        property_filter = request.form.get('property_filter', '').strip()
         
         if not start_date or not end_date:
             flash('Please select both start and end dates.', 'warning')
             return redirect(url_for('custom_report'))
         
+        # Parse property filter if provided
+        property_ids = parse_property_filter(property_filter) if property_filter else None
+        
         # Generate custom report data
-        report_data = generate_custom_report(start_date, end_date, page_path_filter)
+        report_data = generate_custom_report(start_date, end_date, page_path_filter, property_ids)
         
         if request.form.get('download_csv'):
             # Generate CSV and return as download
@@ -388,9 +392,18 @@ def custom_report():
                 tmp.write(csv_data)
                 tmp_path = tmp.name
             
+            # Create filename with filter indicators
+            filename_parts = ['vision_source_enhanced_report', start_date, end_date]
+            if property_ids:
+                filename_parts.append(f'filtered_{len(property_ids)}props')
+            if page_path_filter:
+                filename_parts.append('pagepath')
+            
+            filename = '_'.join(filename_parts) + '.csv'
+            
             return send_file(tmp_path, 
                            as_attachment=True, 
-                           download_name=f'vision_source_enhanced_report_{start_date}_{end_date}.csv',
+                           download_name=filename,
                            mimetype='text/csv')
         else:
             # Display report in browser
@@ -398,20 +411,44 @@ def custom_report():
                                  report_data=report_data, 
                                  start_date=start_date, 
                                  end_date=end_date,
-                                 page_path_filter=page_path_filter)
+                                 page_path_filter=page_path_filter,
+                                 property_filter=property_filter)
     
     except Exception as e:
         app.logger.error(f"Error generating custom report: {str(e)}")
         flash(f'Error generating report: {str(e)}', 'error')
         return redirect(url_for('custom_report'))
 
-def generate_custom_report(start_date, end_date, page_path_filter=None):
+def parse_property_filter(property_filter_text):
+    """Parse property filter text into a list of property IDs"""
+    if not property_filter_text:
+        return None
+    
+    # Split by commas, line breaks, and spaces
+    import re
+    property_ids = re.split(r'[,\n\r\s]+', property_filter_text.strip())
+    
+    # Clean up and validate property IDs
+    valid_ids = []
+    for prop_id in property_ids:
+        prop_id = prop_id.strip()
+        if prop_id and prop_id.isdigit():
+            valid_ids.append(prop_id)
+        elif prop_id:
+            app.logger.warning(f"Invalid property ID format: {prop_id}")
+    
+    app.logger.info(f"Parsed {len(valid_ids)} valid property IDs from filter: {valid_ids}")
+    return valid_ids if valid_ids else None
+
+def generate_custom_report(start_date, end_date, page_path_filter=None, property_ids=None):
     """Generate enhanced custom report with source/medium breakdown and individual appointment events"""
     global discovered_properties
     
     app.logger.info(f"Starting enhanced custom report generation for date range: {start_date} to {end_date}")
     if page_path_filter:
         app.logger.info(f"Page path filter: {page_path_filter}")
+    if property_ids:
+        app.logger.info(f"Property filter: {len(property_ids)} properties - {property_ids}")
     
     report_data = []
     
@@ -431,10 +468,15 @@ def generate_custom_report(start_date, end_date, page_path_filter=None):
                 app.logger.info(f"Processing GA account: {ga_account['account_name']} with {len(ga_account['properties'])} properties")
                 
                 for prop in ga_account['properties']:
-                    property_count += 1
                     property_id = prop['property_id']
                     property_name = prop['property_name']
                     
+                    # Skip if property filter is applied and this property is not in the filter
+                    if property_ids and property_id not in property_ids:
+                        app.logger.debug(f"Skipping property {property_name} (ID: {property_id}) - not in filter")
+                        continue
+                    
+                    property_count += 1
                     app.logger.info(f"Processing property {property_count}: {property_name} (ID: {property_id})")
                     
                     try:
@@ -469,7 +511,11 @@ def generate_custom_report(start_date, end_date, page_path_filter=None):
             app.logger.error(f"Error with auth account {auth_account}: {str(e)}")
             continue
     
-    app.logger.info(f"Enhanced custom report generation completed. Generated {len(report_data)} records")
+    if property_ids:
+        app.logger.info(f"Enhanced custom report generation completed. Generated {len(report_data)} records (filtered from {len(property_ids)} requested properties)")
+    else:
+        app.logger.info(f"Enhanced custom report generation completed. Generated {len(report_data)} records (all properties)")
+    
     return report_data
 
 def get_new_users_data(client, property_id, start_date, end_date):

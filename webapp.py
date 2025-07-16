@@ -480,10 +480,15 @@ def generate_custom_report(start_date, end_date, page_path_filter=None, property
                     app.logger.info(f"Processing property {property_count}: {property_name} (ID: {property_id})")
                     
                     try:
-                        # Get source/medium breakdown data
+                        # Get source/medium breakdown data for new users
                         app.logger.info(f"Getting source/medium data for property {property_id}")
                         source_medium_data = get_source_medium_data(client, property_id, start_date, end_date, page_path_filter)
                         app.logger.info(f"Source/medium data for {property_name}: {len(source_medium_data)} entries")
+                        
+                        # Get appointment events broken down by source/medium
+                        app.logger.info(f"Getting appointment events source/medium data for property {property_id}")
+                        appointment_events_source_medium_data = get_appointment_events_source_medium_data(client, property_id, start_date, end_date, page_path_filter)
+                        app.logger.info(f"Appointment events source/medium data for {property_name}: {len(appointment_events_source_medium_data)} entries")
                         
                         # Get individual appointment events data
                         app.logger.info(f"Getting individual appointment events for property {property_id}")
@@ -493,12 +498,17 @@ def generate_custom_report(start_date, end_date, page_path_filter=None, property
                         # Calculate total new users from all sources
                         total_new_users = sum(item['new_users'] for item in source_medium_data)
                         
+                        # Calculate total appointment events from all sources
+                        total_appointment_events = sum(item['appointment_events'] for item in appointment_events_source_medium_data)
+                        
                         report_data.append({
                             'property_name': property_name,
                             'property_id': property_id,
                             'source_medium_data': source_medium_data,
+                            'appointment_events_source_medium_data': appointment_events_source_medium_data,
                             'appointment_events': individual_appointment_events,
-                            'total_new_users': total_new_users
+                            'total_new_users': total_new_users,
+                            'total_appointment_events': total_appointment_events
                         })
                         
                     except Exception as e:
@@ -507,8 +517,10 @@ def generate_custom_report(start_date, end_date, page_path_filter=None, property
                             'property_name': property_name,
                             'property_id': property_id,
                             'source_medium_data': [],
+                            'appointment_events_source_medium_data': [],
                             'appointment_events': [],
                             'total_new_users': 0,
+                            'total_appointment_events': 0,
                             'error': str(e)
                         })
                         
@@ -682,6 +694,99 @@ def get_source_medium_data(client, property_id, start_date, end_date, page_path_
         app.logger.error(f"Error getting source/medium data for property {property_id}: {str(e)}")
         return []
 
+def get_appointment_events_source_medium_data(client, property_id, start_date, end_date, page_path_filter=None):
+    """Get appointment events broken down by source/medium"""
+    from google.analytics.data_v1beta.types import RunReportRequest, Dimension, Metric, DateRange, Filter, FilterExpression
+    
+    app.logger.info(f"Getting appointment events source/medium data for property {property_id}")
+    
+    dimensions = [
+        Dimension(name="sessionSource"),
+        Dimension(name="sessionMedium"),
+        Dimension(name="eventName")
+    ]
+    
+    metrics = [Metric(name="eventCount")]
+    
+    # Create filter for events containing "appointment"
+    dimension_filter = FilterExpression(
+        filter=Filter(
+            field_name="eventName",
+            string_filter=Filter.StringFilter(
+                match_type=Filter.StringFilter.MatchType.CONTAINS,
+                value="appointment",
+                case_sensitive=False
+            )
+        )
+    )
+    
+    # Add page path filter if provided
+    if page_path_filter:
+        page_filter = FilterExpression(
+            filter=Filter(
+                field_name="pagePath",
+                string_filter=Filter.StringFilter(
+                    match_type=Filter.StringFilter.MatchType.CONTAINS,
+                    value=page_path_filter,
+                    case_sensitive=False
+                )
+            )
+        )
+        
+        # Combine filters with AND
+        from google.analytics.data_v1beta.types import FilterExpressionList
+        dimension_filter = FilterExpression(
+            and_group=FilterExpressionList(
+                expressions=[dimension_filter, page_filter]
+            )
+        )
+    
+    request = RunReportRequest(
+        property=f"properties/{property_id}",
+        dimensions=dimensions,
+        metrics=metrics,
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        dimension_filter=dimension_filter
+    )
+    
+    try:
+        response = client.run_report(request)
+        app.logger.info(f"Appointment events source/medium API response for {property_id}: {len(response.rows)} rows")
+        
+        # Categorize and aggregate data
+        categorized_data = {
+            'google/organic': 0,
+            'eulerity/ads': 0,
+            'direct/none': 0,
+            'others': 0
+        }
+        
+        for row in response.rows:
+            source = row.dimension_values[0].value
+            medium = row.dimension_values[1].value
+            event_name = row.dimension_values[2].value
+            event_count = int(row.metric_values[0].value)
+            
+            category = categorize_source_medium(source, medium)
+            categorized_data[category] += event_count
+            
+            app.logger.info(f"Appointment Event: {event_name} | Source/Medium: {source}/{medium} -> {category}: {event_count} events")
+        
+        # Convert to list format for easier handling
+        result = []
+        for category, count in categorized_data.items():
+            result.append({
+                'source_medium': category,
+                'appointment_events': count
+            })
+        
+        app.logger.info(f"Categorized appointment events source/medium data for {property_id}: {result}")
+        return result
+        
+    except Exception as e:
+        app.logger.error(f"Error getting appointment events source/medium data for property {property_id}: {str(e)}")
+        return []
+
 def get_individual_appointment_events(client, property_id, start_date, end_date, page_path_filter=None):
     """Get individual appointment events with their names and counts"""
     from google.analytics.data_v1beta.types import RunReportRequest, Dimension, Metric, DateRange, Filter, FilterExpression
@@ -767,26 +872,35 @@ def generate_csv_report(report_data):
     writer.writerow([
         'Property Name', 'Property ID', 
         'Google/Organic New Users', 'Eulerity/Ads New Users', 'Direct/None New Users', 'Others New Users', 'Total New Users',
-        'Appointment Event Names', 'Appointment Event Counts', 'Total Appointment Events',
+        'Google/Organic Appointment Events', 'Eulerity/Ads Appointment Events', 'Direct/None Appointment Events', 'Others Appointment Events', 'Total Appointment Events',
+        'Appointment Event Names', 'Appointment Event Counts',
         'Error'
     ])
     
     # Write data rows
     for row in report_data:
-        # Extract source/medium data
+        # Extract source/medium data for new users
         source_medium_data = row.get('source_medium_data', [])
         source_medium_dict = {item['source_medium']: item['new_users'] for item in source_medium_data}
         
-        google_organic = source_medium_dict.get('google/organic', 0)
-        eulerity_ads = source_medium_dict.get('eulerity/ads', 0)
-        direct_none = source_medium_dict.get('direct/none', 0)
-        others = source_medium_dict.get('others', 0)
+        google_organic_users = source_medium_dict.get('google/organic', 0)
+        eulerity_ads_users = source_medium_dict.get('eulerity/ads', 0)
+        direct_none_users = source_medium_dict.get('direct/none', 0)
+        others_users = source_medium_dict.get('others', 0)
         
-        # Extract appointment events data
+        # Extract appointment events source/medium data
+        appointment_events_source_medium_data = row.get('appointment_events_source_medium_data', [])
+        appointment_events_dict = {item['source_medium']: item['appointment_events'] for item in appointment_events_source_medium_data}
+        
+        google_organic_events = appointment_events_dict.get('google/organic', 0)
+        eulerity_ads_events = appointment_events_dict.get('eulerity/ads', 0)
+        direct_none_events = appointment_events_dict.get('direct/none', 0)
+        others_events = appointment_events_dict.get('others', 0)
+        
+        # Extract individual appointment events data
         appointment_events = row.get('appointment_events', [])
         event_names = [event['event_name'] for event in appointment_events]
         event_counts = [str(event['event_count']) for event in appointment_events]
-        total_events = sum(event['event_count'] for event in appointment_events)
         
         # Join event names and counts with semicolons
         event_names_str = '; '.join(event_names) if event_names else ''
@@ -795,14 +909,18 @@ def generate_csv_report(report_data):
         writer.writerow([
             row['property_name'],
             row['property_id'],
-            google_organic,
-            eulerity_ads,
-            direct_none,
-            others,
+            google_organic_users,
+            eulerity_ads_users,
+            direct_none_users,
+            others_users,
             row.get('total_new_users', 0),
+            google_organic_events,
+            eulerity_ads_events,
+            direct_none_events,
+            others_events,
+            row.get('total_appointment_events', 0),
             event_names_str,
             event_counts_str,
-            total_events,
             row.get('error', '')
         ])
     

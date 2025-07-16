@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+
+{% block title %}Extract Data - Vision Source GA4 Data Pull{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1><i class="bi bi-download"></i> Extract Data</h1>
+        <p class="lead">Select properties and date range to extract GA4 data</p>
+    </div>
+</div>
+
+<form method="POST" action="/extract">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-check-square"></i> Select Properties</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <input type="text" id="propertySearch" class="form-control" placeholder="Search properties...">
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="selectAll()">Select All</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="clearAll()">Clear All</button>
+                        <button type="button" class="btn btn-sm btn-outline-info" onclick="loadFromSession()">Load Previously Selected</button>
+                    </div>
+                    <div style="max-height: 400px; overflow-y: auto;">
+                        <div id="propertiesList">
+                            <div class="text-center p-4">
+                                <i class="bi bi-arrow-clockwise spin"></i>
+                                <p>Loading properties...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <small class="text-muted">
+                            <span id="selectedCount">0</span> properties selected
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-calendar-range"></i> Date Range</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="start_date" class="form-label">Start Date</label>
+                        <select class="form-select" id="start_date" name="start_date">
+                            <option value="30daysAgo">Last 30 days</option>
+                            <option value="7daysAgo">Last 7 days</option>
+                            <option value="yesterday">Yesterday</option>
+                            <option value="2023-01-01">2023-01-01</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="end_date" class="form-label">End Date</label>
+                        <select class="form-select" id="end_date" name="end_date">
+                            <option value="today">Today</option>
+                            <option value="yesterday">Yesterday</option>
+                            <option value="7daysAgo">7 days ago</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5><i class="bi bi-gear"></i> Options</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Export Formats</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="xlsx" id="format_xlsx" checked>
+                            <label class="form-check-label" for="format_xlsx">
+                                Excel (.xlsx)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="csv" id="format_csv" checked>
+                            <label class="form-check-label" for="format_csv">
+                                CSV (.csv)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-download"></i> Start Extraction
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let allProperties = [];
+let selectedProperties = new Set();
+
+// Load properties on page load
+document.addEventListener('DOMContentLoaded', function() {
+    loadProperties();
+    loadFromSession();
+});
+
+async function loadProperties() {
+    try {
+        const response = await fetch('/api/properties/search');
+        allProperties = await response.json();
+        renderProperties(allProperties);
+    } catch (error) {
+        console.error('Error loading properties:', error);
+        document.getElementById('propertiesList').innerHTML = `
+            <div class="alert alert-danger">
+                <i class="bi bi-exclamation-triangle"></i>
+                Error loading properties. Please try again.
+            </div>
+        `;
+    }
+}
+
+function renderProperties(properties) {
+    const container = document.getElementById('propertiesList');
+    
+    if (properties.length === 0) {
+        container.innerHTML = `
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i>
+                No properties found. Please run property discovery first.
+            </div>
+        `;
+        return;
+    }
+
+    container.innerHTML = properties.map(property => `
+        <div class="property-card">
+            <div class="form-check">
+                <input class="form-check-input property-checkbox" type="checkbox" 
+                       value="${property.property_id}" 
+                       id="prop_${property.property_id}"
+                       onchange="updateSelection()">
+                <label class="form-check-label" for="prop_${property.property_id}">
+                    <strong>${property.property_name}</strong>
+                    <br>
+                    <small class="text-muted">
+                        ${property.property_id} | ${property.auth_account}
+                        ${property.website_url ? `| ${property.website_url}` : ''}
+                    </small>
+                </label>
+            </div>
+        </div>
+    `).join('');
+
+    // Restore selected properties
+    selectedProperties.forEach(propertyId => {
+        const checkbox = document.getElementById(`prop_${propertyId}`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+    
+    updateSelectedCount();
+}
+
+function updateSelection() {
+    const checkboxes = document.querySelectorAll('.property-checkbox:checked');
+    selectedProperties.clear();
+    checkboxes.forEach(cb => selectedProperties.add(cb.value));
+    
+    updateSelectedCount();
+    
+    // Save to session storage
+    sessionStorage.setItem('selectedProperties', JSON.stringify([...selectedProperties]));
+}
+
+function updateSelectedCount() {
+    document.getElementById('selectedCount').textContent = selectedProperties.size;
+}
+
+function selectAll() {
+    const checkboxes = document.querySelectorAll('.property-checkbox');
+    checkboxes.forEach(cb => {
+        cb.checked = true;
+        selectedProperties.add(cb.value);
+    });
+    updateSelectedCount();
+}
+
+function clearAll() {
+    const checkboxes = document.querySelectorAll('.property-checkbox');
+    checkboxes.forEach(cb => {
+        cb.checked = false;
+    });
+    selectedProperties.clear();
+    updateSelectedCount();
+}
+
+function loadFromSession() {
+    const saved = sessionStorage.getItem('selectedProperties');
+    if (saved) {
+        const savedProperties = JSON.parse(saved);
+        savedProperties.forEach(propertyId => {
+            selectedProperties.add(propertyId);
+            const checkbox = document.getElementById(`prop_${propertyId}`);
+            if (checkbox) {
+                checkbox.checked = true;
+            }
+        });
+        updateSelectedCount();
+    }
+}
+
+// Search functionality
+document.getElementById('propertySearch').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const filtered = allProperties.filter(property => 
+        property.property_name.toLowerCase().includes(searchTerm) ||
+        property.website_url.toLowerCase().includes(searchTerm) ||
+        property.auth_account.toLowerCase().includes(searchTerm)
+    );
+    renderProperties(filtered);
+});
+
+// Form submission
+document.querySelector('form').addEventListener('submit', function(e) {
+    if (selectedProperties.size === 0) {
+        e.preventDefault();
+        alert('Please select at least one property.');
+        return;
+    }
+    
+    // Add selected properties to form
+    selectedProperties.forEach(propertyId => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'selected_properties';
+        input.value = propertyId;
+        this.appendChild(input);
+    });
+});
+</script>
+{% endblock %}

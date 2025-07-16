@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+
+{% block title %}Properties - Vision Source GA4 Data Pull{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1><i class="bi bi-building"></i> Properties</h1>
+        <p class="lead">All discovered GA4 properties across your authenticated accounts</p>
+    </div>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <div class="search-box">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search properties...">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <select id="accountFilter" class="form-select">
+            <option value="">All Accounts</option>
+            {% set accounts = properties | map(attribute='auth_account') | unique | list %}
+            {% for account in accounts %}
+            <option value="{{ account }}">{{ account }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-list"></i> Properties List ({{ properties|length }} total)</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped" id="propertiesTable">
+                        <thead>
+                            <tr>
+                                <th>Property Name</th>
+                                <th>Property ID</th>
+                                <th>Website URL</th>
+                                <th>Auth Account</th>
+                                <th>GA Account</th>
+                                <th>Created</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for property in properties %}
+                            <tr class="property-row" data-account="{{ property.auth_account }}" data-search="{{ property.property_name|lower }} {{ property.website_url|lower }}">
+                                <td>
+                                    <strong>{{ property.property_name }}</strong>
+                                </td>
+                                <td>
+                                    <code>{{ property.property_id }}</code>
+                                </td>
+                                <td>
+                                    {% if property.website_url %}
+                                        <a href="{{ property.website_url }}" target="_blank" class="text-decoration-none">
+                                            {{ property.website_url }}
+                                            <i class="bi bi-box-arrow-up-right"></i>
+                                        </a>
+                                    {% else %}
+                                        <span class="text-muted">-</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <span class="badge bg-primary">{{ property.auth_account }}</span>
+                                    <br>
+                                    <small class="text-muted">{{ property.auth_email }}</small>
+                                </td>
+                                <td>
+                                    {{ property.ga_account_name }}
+                                </td>
+                                <td>
+                                    {% if property.create_time %}
+                                        <small>{{ property.create_time[:10] }}</small>
+                                    {% else %}
+                                        <span class="text-muted">-</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary" onclick="selectProperty('{{ property.property_id }}')">
+                                        <i class="bi bi-check-circle"></i> Select
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-download"></i> Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="/extract" class="btn btn-primary">
+                        <i class="bi bi-download"></i> Extract Data from Selected Properties
+                    </a>
+                    <a href="/discover" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-clockwise"></i> Refresh Properties
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Search functionality
+document.getElementById('searchInput').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const rows = document.querySelectorAll('.property-row');
+    
+    rows.forEach(row => {
+        const searchData = row.getAttribute('data-search');
+        if (searchData.includes(searchTerm)) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+
+// Account filter
+document.getElementById('accountFilter').addEventListener('change', function() {
+    const selectedAccount = this.value;
+    const rows = document.querySelectorAll('.property-row');
+    
+    rows.forEach(row => {
+        const account = row.getAttribute('data-account');
+        if (selectedAccount === '' || account === selectedAccount) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+});
+
+// Select property function
+function selectProperty(propertyId) {
+    // Store selected property in session storage
+    let selectedProperties = JSON.parse(sessionStorage.getItem('selectedProperties') || '[]');
+    
+    if (!selectedProperties.includes(propertyId)) {
+        selectedProperties.push(propertyId);
+        sessionStorage.setItem('selectedProperties', JSON.stringify(selectedProperties));
+        
+        // Visual feedback
+        const button = event.target.closest('button');
+        button.classList.remove('btn-outline-primary');
+        button.classList.add('btn-success');
+        button.innerHTML = '<i class="bi bi-check-circle-fill"></i> Selected';
+        
+        // Show notification
+        const alert = document.createElement('div');
+        alert.className = 'alert alert-success alert-dismissible fade show';
+        alert.innerHTML = `
+            Property selected! <a href="/extract" class="alert-link">Go to Extract Data</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        `;
+        document.querySelector('.container').insertBefore(alert, document.querySelector('.container').firstChild);
+    }
+}
+
+// Load selected properties on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const selectedProperties = JSON.parse(sessionStorage.getItem('selectedProperties') || '[]');
+    
+    selectedProperties.forEach(propertyId => {
+        const button = document.querySelector(`button[onclick="selectProperty('${propertyId}')"]`);
+        if (button) {
+            button.classList.remove('btn-outline-primary');
+            button.classList.add('btn-success');
+            button.innerHTML = '<i class="bi bi-check-circle-fill"></i> Selected';
+        }
+    });
+});
+</script>
+{% endblock %}

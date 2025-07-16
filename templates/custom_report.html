@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+
+{% block title %}Custom Report - Vision Source GA4{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-file-earmark-bar-graph"></i> Custom Report: New Users & Appointment Events
+                </h5>
+            </div>
+            <div class="card-body">
+                <form method="POST" id="customReportForm">
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="start_date" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" id="start_date" name="start_date" 
+                                   value="{{ start_date or '' }}" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="end_date" class="form-label">End Date</label>
+                            <input type="date" class="form-control" id="end_date" name="end_date" 
+                                   value="{{ end_date or '' }}" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">&nbsp;</label>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary" id="generateReport">
+                                    <i class="bi bi-bar-chart-line"></i> Generate Report
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="d-grid">
+                                <button type="submit" name="download_csv" value="true" class="btn btn-success">
+                                    <i class="bi bi-download"></i> Download as CSV
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-info" onclick="setQuickDateRange('30')">
+                                    <i class="bi bi-clock"></i> Last 30 Days
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                {% if report_data %}
+                <hr>
+                <div class="mt-4">
+                    <h6>Report Results ({{ start_date }} to {{ end_date }})</h6>
+                    <p class="text-muted">Showing {{ report_data|length }} properties</p>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Property Name</th>
+                                    <th>Property ID</th>
+                                    <th>New Users</th>
+                                    <th>Appointment Events</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in report_data %}
+                                <tr>
+                                    <td>{{ row.property_name }}</td>
+                                    <td>{{ row.property_id }}</td>
+                                    <td>
+                                        {% if row.error %}
+                                            <span class="text-muted">-</span>
+                                        {% else %}
+                                            <span class="badge bg-primary">{{ row.new_users }}</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if row.error %}
+                                            <span class="text-muted">-</span>
+                                        {% else %}
+                                            <span class="badge bg-success">{{ row.appointment_events }}</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if row.error %}
+                                            <span class="text-danger" title="{{ row.error }}">
+                                                <i class="bi bi-exclamation-triangle"></i> Error
+                                            </span>
+                                        {% else %}
+                                            <span class="text-success">
+                                                <i class="bi bi-check-circle"></i> Success
+                                            </span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Summary Statistics -->
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Total Properties</h5>
+                                    <h3 class="text-primary">{{ report_data|length }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Total New Users</h5>
+                                    <h3 class="text-info">{{ report_data|selectattr('new_users')|map(attribute='new_users')|sum }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Total Appointment Events</h5>
+                                    <h3 class="text-success">{{ report_data|selectattr('appointment_events')|map(attribute='appointment_events')|sum }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="loadingModal" class="modal fade" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="spinner-border text-primary mb-3" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <h6>Generating Custom Report...</h6>
+                <p class="text-muted">This may take a few minutes depending on the number of properties.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function setQuickDateRange(days) {
+    const endDate = new Date();
+    const startDate = new Date();
+    startDate.setDate(endDate.getDate() - days);
+    
+    document.getElementById('start_date').value = startDate.toISOString().split('T')[0];
+    document.getElementById('end_date').value = endDate.toISOString().split('T')[0];
+}
+
+document.getElementById('customReportForm').addEventListener('submit', function(e) {
+    const startDate = document.getElementById('start_date').value;
+    const endDate = document.getElementById('end_date').value;
+    
+    if (!startDate || !endDate) {
+        e.preventDefault();
+        alert('Please select both start and end dates.');
+        return;
+    }
+    
+    if (new Date(startDate) > new Date(endDate)) {
+        e.preventDefault();
+        alert('Start date must be before end date.');
+        return;
+    }
+    
+    // Show loading modal for report generation (not CSV download)
+    if (!e.submitter || !e.submitter.name) {
+        const loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'));
+        loadingModal.show();
+    }
+});
+
+// Set default dates (last 30 days)
+window.addEventListener('DOMContentLoaded', function() {
+    const startDateInput = document.getElementById('start_date');
+    const endDateInput = document.getElementById('end_date');
+    
+    if (!startDateInput.value && !endDateInput.value) {
+        setQuickDateRange(30);
+    }
+});
+</script>
+{% endblock %}

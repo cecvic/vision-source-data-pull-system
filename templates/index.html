@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Vision Source GA4 Data Pull{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1><i class="bi bi-house-door"></i> Dashboard</h1>
+        <p class="lead">Welcome to the Vision Source GA4 Data Pull System</p>
+    </div>
+</div>
+
+{% if needs_discovery %}
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-search"></i> Property Discovery Required</h5>
+                </div>
+                <div class="card-body">
+                    <p>No properties have been discovered yet. You need to run property discovery first to find all available GA4 properties across your authenticated accounts.</p>
+                    <div class="d-grid gap-2">
+                        <a href="/discover" class="btn btn-primary btn-lg">
+                            <i class="bi bi-search"></i> Discover Properties
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-info-circle"></i> Next Steps</h5>
+                </div>
+                <div class="card-body">
+                    <ol>
+                        <li>Click "Discover Properties" to scan all accounts</li>
+                        <li>Review available properties</li>
+                        <li>Select properties for data extraction</li>
+                        <li>Download your data</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-people display-4 text-primary"></i>
+                    <h5 class="card-title">{{ accounts_summary|length }}</h5>
+                    <p class="card-text">Authenticated Accounts</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-building display-4 text-success"></i>
+                    <h5 class="card-title">{{ total_properties }}</h5>
+                    <p class="card-text">Total Properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-graph-up display-4 text-info"></i>
+                    <h5 class="card-title">GA4</h5>
+                    <p class="card-text">Analytics Platform</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <i class="bi bi-download display-4 text-warning"></i>
+                    <h5 class="card-title">Extract</h5>
+                    <p class="card-text">Data Ready</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-list-check"></i> Account Summary</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Account</th>
+                                    <th>Email</th>
+                                    <th>Properties</th>
+                                    <th>GA Accounts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for account in accounts_summary %}
+                                <tr>
+                                    <td>{{ account.auth_account }}</td>
+                                    <td>{{ account.email }}</td>
+                                    <td><span class="badge bg-primary">{{ account.properties }}</span></td>
+                                    <td><span class="badge bg-secondary">{{ account.ga_accounts }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5><i class="bi bi-gear"></i> Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a href="/properties" class="btn btn-outline-primary">
+                            <i class="bi bi-eye"></i> View All Properties
+                        </a>
+                        <a href="/extract" class="btn btn-primary">
+                            <i class="bi bi-download"></i> Extract Data
+                        </a>
+                        <a href="/discover" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh Properties
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}

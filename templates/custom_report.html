@@ -8,23 +8,28 @@
         <div class="card">
             <div class="card-header">
                 <h5 class="card-title mb-0">
-                    <i class="bi bi-file-earmark-bar-graph"></i> Custom Report: New Users & Appointment Events
+                    <i class="bi bi-file-earmark-bar-graph"></i> Enhanced Custom Report: Source/Medium & Appointment Events
                 </h5>
             </div>
             <div class="card-body">
                 <form method="POST" id="customReportForm">
                     <div class="row mb-3">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label for="start_date" class="form-label">Start Date</label>
                             <input type="date" class="form-control" id="start_date" name="start_date" 
                                    value="{{ start_date or '' }}" required>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label for="end_date" class="form-label">End Date</label>
                             <input type="date" class="form-control" id="end_date" name="end_date" 
                                    value="{{ end_date or '' }}" required>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <label for="page_path_filter" class="form-label">Page Path Filter (Optional)</label>
+                            <input type="text" class="form-control" id="page_path_filter" name="page_path_filter" 
+                                   value="{{ page_path_filter or '' }}" placeholder="e.g., /appointments">
+                        </div>
+                        <div class="col-md-3">
                             <label class="form-label">&nbsp;</label>
                             <div class="d-grid gap-2">
                                 <button type="submit" class="btn btn-primary" id="generateReport">
@@ -64,7 +69,10 @@
                                 <tr>
                                     <th>Property Name</th>
                                     <th>Property ID</th>
-                                    <th>New Users</th>
+                                    <th>Google/Organic</th>
+                                    <th>Eulerity/Ads</th>
+                                    <th>Direct/None</th>
+                                    <th>Others</th>
                                     <th>Appointment Events</th>
                                     <th>Status</th>
                                 </tr>
@@ -74,20 +82,41 @@
                                 <tr>
                                     <td>{{ row.property_name }}</td>
                                     <td>{{ row.property_id }}</td>
-                                    <td>
-                                        {% if row.error %}
-                                            <span class="text-muted">-</span>
-                                        {% else %}
-                                            <span class="badge bg-primary">{{ row.new_users }}</span>
-                                        {% endif %}
-                                    </td>
-                                    <td>
-                                        {% if row.error %}
-                                            <span class="text-muted">-</span>
-                                        {% else %}
-                                            <span class="badge bg-success">{{ row.appointment_events }}</span>
-                                        {% endif %}
-                                    </td>
+                                    {% if row.error %}
+                                        <td><span class="text-muted">-</span></td>
+                                        <td><span class="text-muted">-</span></td>
+                                        <td><span class="text-muted">-</span></td>
+                                        <td><span class="text-muted">-</span></td>
+                                        <td><span class="text-muted">-</span></td>
+                                    {% else %}
+                                        {% set source_medium_dict = {} %}
+                                        {% for item in row.source_medium_data %}
+                                            {% if source_medium_dict.update({item.source_medium: item.new_users}) %}{% endif %}
+                                        {% endfor %}
+                                        
+                                        <td><span class="badge bg-success">{{ source_medium_dict.get('google/organic', 0) }}</span></td>
+                                        <td><span class="badge bg-warning">{{ source_medium_dict.get('eulerity/ads', 0) }}</span></td>
+                                        <td><span class="badge bg-info">{{ source_medium_dict.get('direct/none', 0) }}</span></td>
+                                        <td><span class="badge bg-secondary">{{ source_medium_dict.get('others', 0) }}</span></td>
+                                        <td>
+                                            {% if row.appointment_events %}
+                                                <div class="dropdown">
+                                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                        {{ row.appointment_events|length }} Events
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        {% for event in row.appointment_events %}
+                                                            <li class="dropdown-item-text">
+                                                                <strong>{{ event.event_name }}:</strong> {{ event.event_count }}
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </div>
+                                            {% else %}
+                                                <span class="badge bg-light text-dark">0</span>
+                                            {% endif %}
+                                        </td>
+                                    {% endif %}
                                     <td>
                                         {% if row.error %}
                                             <span class="text-danger" title="{{ row.error }}">
@@ -107,27 +136,109 @@
                     
                     <!-- Summary Statistics -->
                     <div class="row mt-4">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="card bg-light">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Total Properties</h5>
-                                    <h3 class="text-primary">{{ report_data|length }}</h3>
+                                    <h6 class="card-title">Total Properties</h6>
+                                    <h4 class="text-primary">{{ report_data|length }}</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card bg-light">
+                        <div class="col-md-2">
+                            <div class="card bg-success text-white">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Total New Users</h5>
-                                    <h3 class="text-info">{{ report_data|selectattr('new_users')|map(attribute='new_users')|sum }}</h3>
+                                    <h6 class="card-title">Google/Organic</h6>
+                                    <h4>
+                                        {% set google_organic_total = 0 %}
+                                        {% for row in report_data %}
+                                            {% if not row.error %}
+                                                {% for item in row.source_medium_data %}
+                                                    {% if item.source_medium == 'google/organic' %}
+                                                        {% set google_organic_total = google_organic_total + item.new_users %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ google_organic_total }}
+                                    </h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card bg-light">
+                        <div class="col-md-2">
+                            <div class="card bg-warning text-dark">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Total Appointment Events</h5>
-                                    <h3 class="text-success">{{ report_data|selectattr('appointment_events')|map(attribute='appointment_events')|sum }}</h3>
+                                    <h6 class="card-title">Eulerity/Ads</h6>
+                                    <h4>
+                                        {% set eulerity_ads_total = 0 %}
+                                        {% for row in report_data %}
+                                            {% if not row.error %}
+                                                {% for item in row.source_medium_data %}
+                                                    {% if item.source_medium == 'eulerity/ads' %}
+                                                        {% set eulerity_ads_total = eulerity_ads_total + item.new_users %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ eulerity_ads_total }}
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card bg-info text-white">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Direct/None</h6>
+                                    <h4>
+                                        {% set direct_none_total = 0 %}
+                                        {% for row in report_data %}
+                                            {% if not row.error %}
+                                                {% for item in row.source_medium_data %}
+                                                    {% if item.source_medium == 'direct/none' %}
+                                                        {% set direct_none_total = direct_none_total + item.new_users %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ direct_none_total }}
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card bg-secondary text-white">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Others</h6>
+                                    <h4>
+                                        {% set others_total = 0 %}
+                                        {% for row in report_data %}
+                                            {% if not row.error %}
+                                                {% for item in row.source_medium_data %}
+                                                    {% if item.source_medium == 'others' %}
+                                                        {% set others_total = others_total + item.new_users %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ others_total }}
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">Total Events</h6>
+                                    <h4>
+                                        {% set total_events = 0 %}
+                                        {% for row in report_data %}
+                                            {% if not row.error %}
+                                                {% for event in row.appointment_events %}
+                                                    {% set total_events = total_events + event.event_count %}
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {{ total_events }}
+                                    </h4>
                                 </div>
                             </div>
                         </div>

@@ -359,7 +359,7 @@ def search_properties():
 
 @app.route('/custom-report', methods=['GET', 'POST'])
 def custom_report():
-    """Custom report for new users and appointment events"""
+    """Custom report for new users and appointment events with source/medium breakdown"""
     if request.method == 'GET':
         return render_template('custom_report.html')
     
@@ -367,13 +367,14 @@ def custom_report():
     try:
         start_date = request.form.get('start_date')
         end_date = request.form.get('end_date')
+        page_path_filter = request.form.get('page_path_filter', '').strip()
         
         if not start_date or not end_date:
             flash('Please select both start and end dates.', 'warning')
             return redirect(url_for('custom_report'))
         
         # Generate custom report data
-        report_data = generate_custom_report(start_date, end_date)
+        report_data = generate_custom_report(start_date, end_date, page_path_filter)
         
         if request.form.get('download_csv'):
             # Generate CSV and return as download
@@ -389,25 +390,29 @@ def custom_report():
             
             return send_file(tmp_path, 
                            as_attachment=True, 
-                           download_name=f'vision_source_custom_report_{start_date}_{end_date}.csv',
+                           download_name=f'vision_source_enhanced_report_{start_date}_{end_date}.csv',
                            mimetype='text/csv')
         else:
             # Display report in browser
             return render_template('custom_report.html', 
                                  report_data=report_data, 
                                  start_date=start_date, 
-                                 end_date=end_date)
+                                 end_date=end_date,
+                                 page_path_filter=page_path_filter)
     
     except Exception as e:
         app.logger.error(f"Error generating custom report: {str(e)}")
         flash(f'Error generating report: {str(e)}', 'error')
         return redirect(url_for('custom_report'))
 
-def generate_custom_report(start_date, end_date):
-    """Generate custom report data for new users and appointment events"""
+def generate_custom_report(start_date, end_date, page_path_filter=None):
+    """Generate enhanced custom report with source/medium breakdown and individual appointment events"""
     global discovered_properties
     
-    app.logger.info(f"Starting custom report generation for date range: {start_date} to {end_date}")
+    app.logger.info(f"Starting enhanced custom report generation for date range: {start_date} to {end_date}")
+    if page_path_filter:
+        app.logger.info(f"Page path filter: {page_path_filter}")
+    
     report_data = []
     
     # Initialize GA4 client
@@ -433,21 +438,21 @@ def generate_custom_report(start_date, end_date):
                     app.logger.info(f"Processing property {property_count}: {property_name} (ID: {property_id})")
                     
                     try:
-                        # Get new users data
-                        app.logger.info(f"Getting new users data for property {property_id}")
-                        new_users_data = get_new_users_data(client, property_id, start_date, end_date)
-                        app.logger.info(f"New users for {property_name}: {new_users_data}")
+                        # Get source/medium breakdown data
+                        app.logger.info(f"Getting source/medium data for property {property_id}")
+                        source_medium_data = get_source_medium_data(client, property_id, start_date, end_date, page_path_filter)
+                        app.logger.info(f"Source/medium data for {property_name}: {len(source_medium_data)} entries")
                         
-                        # Get appointment events data
-                        app.logger.info(f"Getting appointment events data for property {property_id}")
-                        appointment_events_data = get_appointment_events_data(client, property_id, start_date, end_date)
-                        app.logger.info(f"Appointment events for {property_name}: {appointment_events_data}")
+                        # Get individual appointment events data
+                        app.logger.info(f"Getting individual appointment events for property {property_id}")
+                        individual_appointment_events = get_individual_appointment_events(client, property_id, start_date, end_date, page_path_filter)
+                        app.logger.info(f"Individual appointment events for {property_name}: {len(individual_appointment_events)} different events")
                         
                         report_data.append({
                             'property_name': property_name,
                             'property_id': property_id,
-                            'new_users': new_users_data,
-                            'appointment_events': appointment_events_data
+                            'source_medium_data': source_medium_data,
+                            'appointment_events': individual_appointment_events
                         })
                         
                     except Exception as e:
@@ -455,8 +460,8 @@ def generate_custom_report(start_date, end_date):
                         report_data.append({
                             'property_name': property_name,
                             'property_id': property_id,
-                            'new_users': 0,
-                            'appointment_events': 0,
+                            'source_medium_data': [],
+                            'appointment_events': [],
                             'error': str(e)
                         })
                         
@@ -464,7 +469,7 @@ def generate_custom_report(start_date, end_date):
             app.logger.error(f"Error with auth account {auth_account}: {str(e)}")
             continue
     
-    app.logger.info(f"Custom report generation completed. Generated {len(report_data)} records")
+    app.logger.info(f"Enhanced custom report generation completed. Generated {len(report_data)} records")
     return report_data
 
 def get_new_users_data(client, property_id, start_date, end_date):
@@ -539,24 +544,213 @@ def get_appointment_events_data(client, property_id, start_date, end_date):
         app.logger.error(f"Error getting appointment events for property {property_id}: {str(e)}")
         return 0
 
+def categorize_source_medium(source, medium):
+    """Categorize source/medium into predefined categories"""
+    source_lower = source.lower()
+    medium_lower = medium.lower()
+    
+    # Define source/medium mappings
+    if source_lower == 'google' and medium_lower == 'organic':
+        return 'google/organic'
+    elif source_lower == 'eulerity' and medium_lower == 'ads':
+        return 'eulerity/ads'
+    elif source_lower == 'direct' and medium_lower == '(none)':
+        return 'direct/none'
+    else:
+        return 'others'
+
+def get_source_medium_data(client, property_id, start_date, end_date, page_path_filter=None):
+    """Get source/medium breakdown data for new users"""
+    from google.analytics.data_v1beta.types import RunReportRequest, Dimension, Metric, DateRange, Filter, FilterExpression
+    
+    app.logger.info(f"Getting source/medium data for property {property_id}")
+    
+    dimensions = [
+        Dimension(name="sessionSource"),
+        Dimension(name="sessionMedium")
+    ]
+    
+    metrics = [Metric(name="newUsers")]
+    
+    # Add page path filter if provided
+    filter_expression = None
+    if page_path_filter:
+        filter_expression = FilterExpression(
+            filter=Filter(
+                field_name="pagePath",
+                string_filter=Filter.StringFilter(
+                    match_type=Filter.StringFilter.MatchType.CONTAINS,
+                    value=page_path_filter,
+                    case_sensitive=False
+                )
+            )
+        )
+    
+    request = RunReportRequest(
+        property=f"properties/{property_id}",
+        dimensions=dimensions,
+        metrics=metrics,
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        dimension_filter=filter_expression
+    )
+    
+    try:
+        response = client.run_report(request)
+        app.logger.info(f"Source/medium API response for {property_id}: {len(response.rows)} rows")
+        
+        # Categorize and aggregate data
+        categorized_data = {
+            'google/organic': 0,
+            'eulerity/ads': 0,
+            'direct/none': 0,
+            'others': 0
+        }
+        
+        for row in response.rows:
+            source = row.dimension_values[0].value
+            medium = row.dimension_values[1].value
+            new_users = int(row.metric_values[0].value)
+            
+            category = categorize_source_medium(source, medium)
+            categorized_data[category] += new_users
+            
+            app.logger.info(f"Source/Medium: {source}/{medium} -> {category}: {new_users} new users")
+        
+        # Convert to list format for easier handling
+        result = []
+        for category, count in categorized_data.items():
+            result.append({
+                'source_medium': category,
+                'new_users': count
+            })
+        
+        app.logger.info(f"Categorized source/medium data for {property_id}: {result}")
+        return result
+        
+    except Exception as e:
+        app.logger.error(f"Error getting source/medium data for property {property_id}: {str(e)}")
+        return []
+
+def get_individual_appointment_events(client, property_id, start_date, end_date, page_path_filter=None):
+    """Get individual appointment events with their names and counts"""
+    from google.analytics.data_v1beta.types import RunReportRequest, Dimension, Metric, DateRange, Filter, FilterExpression
+    
+    app.logger.info(f"Getting individual appointment events for property {property_id}")
+    
+    # First, get all events containing "appointment"
+    dimension_filter = FilterExpression(
+        filter=Filter(
+            field_name="eventName",
+            string_filter=Filter.StringFilter(
+                match_type=Filter.StringFilter.MatchType.CONTAINS,
+                value="appointment",
+                case_sensitive=False
+            )
+        )
+    )
+    
+    # Add page path filter if provided
+    if page_path_filter:
+        page_filter = FilterExpression(
+            filter=Filter(
+                field_name="pagePath",
+                string_filter=Filter.StringFilter(
+                    match_type=Filter.StringFilter.MatchType.CONTAINS,
+                    value=page_path_filter,
+                    case_sensitive=False
+                )
+            )
+        )
+        
+        # Combine filters with AND
+        from google.analytics.data_v1beta.types import FilterExpressionList
+        dimension_filter = FilterExpression(
+            and_group=FilterExpressionList(
+                expressions=[dimension_filter, page_filter]
+            )
+        )
+    
+    request = RunReportRequest(
+        property=f"properties/{property_id}",
+        dimensions=[Dimension(name="eventName")],
+        metrics=[Metric(name="eventCount")],
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        dimension_filter=dimension_filter
+    )
+    
+    try:
+        response = client.run_report(request)
+        app.logger.info(f"Individual appointment events API response for {property_id}: {len(response.rows)} rows")
+        
+        events = []
+        for row in response.rows:
+            event_name = row.dimension_values[0].value
+            event_count = int(row.metric_values[0].value)
+            
+            events.append({
+                'event_name': event_name,
+                'event_count': event_count
+            })
+            
+            app.logger.info(f"Appointment event: {event_name} = {event_count}")
+        
+        # Sort by event count descending
+        events.sort(key=lambda x: x['event_count'], reverse=True)
+        
+        app.logger.info(f"Individual appointment events for {property_id}: {len(events)} events")
+        return events
+        
+    except Exception as e:
+        app.logger.error(f"Error getting individual appointment events for property {property_id}: {str(e)}")
+        return []
+
 def generate_csv_report(report_data):
-    """Generate CSV content from report data"""
+    """Generate CSV content from enhanced report data"""
     import csv
     import io
     
     output = io.StringIO()
     writer = csv.writer(output)
     
-    # Write header
-    writer.writerow(['Property Name', 'Property ID', 'New Users', 'Appointment Events', 'Error'])
+    # Write header with new columns
+    writer.writerow([
+        'Property Name', 'Property ID', 
+        'Google/Organic New Users', 'Eulerity/Ads New Users', 'Direct/None New Users', 'Others New Users',
+        'Appointment Event Names', 'Appointment Event Counts', 'Total Appointment Events',
+        'Error'
+    ])
     
     # Write data rows
     for row in report_data:
+        # Extract source/medium data
+        source_medium_data = row.get('source_medium_data', [])
+        source_medium_dict = {item['source_medium']: item['new_users'] for item in source_medium_data}
+        
+        google_organic = source_medium_dict.get('google/organic', 0)
+        eulerity_ads = source_medium_dict.get('eulerity/ads', 0)
+        direct_none = source_medium_dict.get('direct/none', 0)
+        others = source_medium_dict.get('others', 0)
+        
+        # Extract appointment events data
+        appointment_events = row.get('appointment_events', [])
+        event_names = [event['event_name'] for event in appointment_events]
+        event_counts = [str(event['event_count']) for event in appointment_events]
+        total_events = sum(event['event_count'] for event in appointment_events)
+        
+        # Join event names and counts with semicolons
+        event_names_str = '; '.join(event_names) if event_names else ''
+        event_counts_str = '; '.join(event_counts) if event_counts else ''
+        
         writer.writerow([
             row['property_name'],
             row['property_id'],
-            row['new_users'],
-            row['appointment_events'],
+            google_organic,
+            eulerity_ads,
+            direct_none,
+            others,
+            event_names_str,
+            event_counts_str,
+            total_events,
             row.get('error', '')
         ])
     

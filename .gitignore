@@ -48,6 +48,9 @@ Thumbs.db
 
 # Project specific
 *.log
+config.yaml
+exports/
+discovered_properties.json
 client_secret.json
 config.yaml
 discovered_properties*.json

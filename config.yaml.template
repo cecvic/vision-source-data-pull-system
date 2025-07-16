@@ -1,0 +1,56 @@
+accounts:
+  account1:
+    email: luxoticasupport@eulerity.com
+    properties:
+    - appointment_event_name: book_appointments
+      location_name: Vision Source Location 1
+      property_id: '123456789'
+    - appointment_event_name: schedule_appointment
+      location_name: Vision Source Location 2
+      property_id: '123456790'
+    refresh_token: YOUR_REFRESH_TOKEN_HERE
+  account2:
+    email: luxoticasupport2@eulerity.com
+    properties:
+    - appointment_event_name: make_appointments
+      location_name: Vision Source Location 3
+      property_id: '123456791'
+    refresh_token: YOUR_REFRESH_TOKEN_HERE
+  account3:
+    email: luxoticasupport3@eulerity.com
+    properties: []
+    refresh_token: YOUR_REFRESH_TOKEN_HERE
+  account4:
+    email: luxoticasupport4@eulerity.com
+    properties: []
+    refresh_token: YOUR_REFRESH_TOKEN_HERE
+  account5:
+    email: luxotticasupport5@eulerity.com
+    properties: []
+    refresh_token: YOUR_REFRESH_TOKEN_HERE
+data_config:
+  date_range:
+    end_date: today
+    start_date: 30daysAgo
+  metrics:
+  - newUsers
+  - eventCount
+event_mapping:
+  appointment_events:
+  - book_appointments
+  - schedule_appointment
+  - make_appointments
+  - book_appoinments
+  - appointment_booking
+  - schedule_appt
+export:
+  filename_template: vision_source_data_{date}.{format}
+  format: xlsx
+  output_path: ./exports/
+oauth:
+  client_id: YOUR_CLIENT_ID_HERE
+  client_secret: YOUR_CLIENT_SECRET_HERE
+  redirect_uri: http://localhost:8080
+  scopes:
+  - https://www.googleapis.com/auth/analytics.readonly
+  - https://www.googleapis.com/auth/analytics.edit 
